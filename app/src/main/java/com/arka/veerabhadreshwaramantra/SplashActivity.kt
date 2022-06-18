@@ -9,21 +9,20 @@ import kotlinx.coroutines.*
 
 class SplashActivity : AppCompatActivity() {
 
-        // This is the loading time of the splash screen
-        private val splashTimeOut:Long = 3000 // 1 sec
-        @Suppress("DEPRECATION")
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.splashscreen)
+    // This is the loading time of the splash screen
+    private val splashTimeOut: Long = 3000 // 1 sec
 
-            Handler().postDelayed({
-                // This method will be executed once the timer is over
-                // Start your app main activity
+    @Suppress("DEPRECATION")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.splashscreen)
 
-                startActivity(Intent(this,MainActivity::class.java))
-                // close this activity
-                finish()
-            }, splashTimeOut)
-
+        Handler().postDelayed({
+            // This method will be executed once the timer is over
+            // Start your app main activity
+            startActivity(Intent(this, MainActivity::class.java))
+            // close this activity
+            finish()
+        }, splashTimeOut)
     }
 }
