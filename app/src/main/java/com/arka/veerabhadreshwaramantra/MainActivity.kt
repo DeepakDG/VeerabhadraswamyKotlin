@@ -46,8 +46,52 @@ class MainActivity : AppCompatActivity() {
 
         // This loop will create 20 Views containing
         // the image with the count of view
-        for (i in 1..20) {
-            data.add(ItemsViewModel(R.drawable.ic_launcher_background, "Item " + i))
+        val  dashboardList = mutableMapOf<String,Int>(
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸುಪ್ರಭಾತ" to 1,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಕವಚಂ" to 2,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ದಂಡಕಂ" to 3,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ತಾರಾವಳಿ" to 4,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರಾಷ್ಟಕಂ" to 5,
+
+                         "ಶ್ರೀ ಭದ್ರ ಕವಚಂ" to 6,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮಸ್ತೋತ್ರ" to 7,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮವಳಿ" to 8,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ ಸ್ತೋತ್ರO" to 9,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ" to 10,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ವಡಪುಗಳು" to 11,
+
+                         "ಗುಗ್ಗುಳದ ಬಗ್ಗೆ ಮಾಹಿತಿ" to 12,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಂಕ್ಷಿಪ್ತ ಪರಿಚಯ" to 13,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಆಚರಣೆಗಳು" to 14,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಪ್ರಾರ್ಥನೆ" to 15,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳ ಶ್ಲೋಕ" to 16,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಶತಕ" to 17,
+
+                         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳ" to 18,
+
+                         "ದ್ವಾತ್ರಿಂಶದ್ಭುಜ ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ" to 19,
+
+                         "ಶ್ರೀ ಶರಭ ಹೃದಯ ಸ್ತೋತ್ರ" to 20,
+
+                         "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು" to 21,
+        )
+
+        for (i in dashboardList.keys) {
+            data.add(ItemsViewModel(R.drawable.ic_launcher_background, i))
         }
 
         // This will pass the ArrayList to our Adapter
