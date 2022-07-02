@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
@@ -29,6 +30,9 @@ class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adap
 
         // sets the text to the textview from our itemHolder class
         holder.textView.text = ItemsViewModel.text
+        holder.itemView.setOnClickListener{
+            Toast.makeText(it.context,"clicked"+it,Toast.LENGTH_LONG).show()
+        }
 
     }
 

@@ -9,6 +9,8 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.arka.veerabhadreshwaramantra.databinding.ActivityMainBinding
@@ -99,6 +101,7 @@ class MainActivity : AppCompatActivity() {
 
         // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
