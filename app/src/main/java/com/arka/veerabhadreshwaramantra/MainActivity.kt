@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
         val data = ArrayList<ItemsViewModel>()
 
         for (i in dashboardList.keys) {
-            data.add(ItemsViewModel(R.drawable.ic_launcher_background, i))
+            data.add(ItemsViewModel(R.drawable.om, i))
         }
 
         // This will pass the ArrayList to our Adapter

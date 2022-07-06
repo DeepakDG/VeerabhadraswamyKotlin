@@ -24,20 +24,23 @@ class ViewPagerDashboard : AppCompatActivity() {
         btnNext = findViewById(R.id.btnNext)
         val adapter = ViewPagerAdapter(imagesList)
         viewPager2 = findViewById(R.id.viewPager)
+//        viewPager2.setCurrentItem(0)
         viewPager2.adapter = adapter
 
         btnPrevious.setOnClickListener{
             val currPos: Int = viewPager2.currentItem
-            if (currPos != 0) {
+//            if (currPos != 0) {
                 viewPager2.currentItem = currPos - 1
-            }
+
+//            }
         }
 
         btnNext.setOnClickListener{
             val currPos: Int = viewPager2.currentItem
-            if (currPos != 0) {
+//            if (currPos != 0) {
                 viewPager2.currentItem = currPos + 1
-            }
+//                viewPager2.setCurrentItem(viewPager2.currentItem)
+//            }
         }
     }
 }
