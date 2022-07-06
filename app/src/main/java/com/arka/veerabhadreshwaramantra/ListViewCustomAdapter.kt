@@ -1,14 +1,16 @@
 package com.arka.veerabhadreshwaramantra
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class ListViewCustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adapter<ListViewCustomAdapter.ViewHolder>() {
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -32,6 +34,7 @@ class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adap
         holder.textView.text = ItemsViewModel.text
         holder.itemView.setOnClickListener{
             Toast.makeText(it.context,"clicked"+it,Toast.LENGTH_LONG).show()
+            it.context.startActivity(Intent(it.context, ViewPagerDashboard::class.java))
         }
 
     }
