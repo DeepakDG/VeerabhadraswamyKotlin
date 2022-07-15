@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/veerabhadreshwaramantra/app/src/main/res/drawable-v24/set_wallpaper_back.xml" value="0.1" />
         <entry key="..\:/veerabhadreshwaramantra/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/veerabhadreshwaramantra/app/src/main/res/layout/activity_full_image.xml" value="0.20416666666666666" />
         <entry key="..\:/veerabhadreshwaramantra/app/src/main/res/layout/fragment_second.xml" value="0.20416666666666666" />
+        <entry key="..\:/veerabhadreshwaramantra/app/src/main/res/layout/fragmentimage.xml" value="0.20416666666666666" />
         <entry key="..\:/veerabhadreshwaramantra/app/src/main/res/layout/item_view_pager.xml" value="0.18854166666666666" />
         <entry key="..\:/veerabhadreshwaramantra/app/src/main/res/layout/list_item_cardview.xml" value="0.1" />
         <entry key="..\:/veerabhadreshwaramantra/app/src/main/res/layout/splashscreen.xml" value="0.1" />

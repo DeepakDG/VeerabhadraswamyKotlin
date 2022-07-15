@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "801366528523",
+    "firebase_url": "https://veerabhadraswamywallpaper.firebaseio.com",
+    "project_id": "veerabhadraswamywallpaper",
+    "storage_bucket": "veerabhadraswamywallpaper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801366528523:android:d52aa4ac93531bec20ad0e",
+        "android_client_info": {
+          "package_name": "com.arka.veerabhadreshwaramantra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801366528523-4v065v72pgrg3kfobfha72t8a5pkvs9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOxEedXhY2LkL9eNq7egmKaFg3f4Vn1CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801366528523-4v065v72pgrg3kfobfha72t8a5pkvs9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801366528523:android:ea4be3a3e5148f1520ad0e",
+        "android_client_info": {
+          "package_name": "com.arkha.veerabhadrawallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801366528523-4v065v72pgrg3kfobfha72t8a5pkvs9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOxEedXhY2LkL9eNq7egmKaFg3f4Vn1CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801366528523-4v065v72pgrg3kfobfha72t8a5pkvs9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

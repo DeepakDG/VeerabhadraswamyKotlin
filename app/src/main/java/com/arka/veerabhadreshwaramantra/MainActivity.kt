@@ -1,22 +1,38 @@
 package com.arka.veerabhadreshwaramantra
 
+import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.ui.AppBarConfiguration
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Toast
+import android.widget.VideoView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.arka.veerabhadreshwaramantra.databinding.ActivityMainBinding
+import com.google.android.gms.tasks.OnFailureListener
+import com.google.android.gms.tasks.OnSuccessListener
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.AuthResult
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.ListResult
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+
     // This loop will create 20 Views containing
     // the image with the count of view
-    val  dashboardList = mutableMapOf<String,Int>(
+    val dashboardList = mutableMapOf<String, Int>(
         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸುಪ್ರಭಾತ" to 1,
 
         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಕವಚಂ" to 2,
@@ -59,7 +75,21 @@ class MainActivity : AppCompatActivity() {
 
         "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು" to 21,
     )
+    private val IMAGE_URL = "gs://veerabhadraswamywallpaper.appspot.com"
+    private lateinit var auth: FirebaseAuth
+    private val list: ArrayList<Long> = ArrayList()
+    private var tinyDB: TinyDB? = null
+    private val imagePath: ArrayList<String> = ArrayList()
+    private var parentLayout: View? = null
 
+    public override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        if(currentUser != null){
+//            reload();
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -76,6 +106,7 @@ class MainActivity : AppCompatActivity() {
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+            startActivity(Intent(applicationContext, HomePage::class.java))
         }
 
         // getting the recyclerview by its id
@@ -97,7 +128,121 @@ class MainActivity : AppCompatActivity() {
         // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
 
+        tinyDB = TinyDB(applicationContext)
+        auth = Firebase.auth
+        val user = Firebase.auth.currentUser
+        user?.let {
+            // Name, email address, and profile photo Url
+            val name = user.displayName
+            val email = user.email
+            val photoUrl = user.photoUrl
+
+            // Check if user's email is verified
+            val emailVerified = user.isEmailVerified
+
+            // The user's ID, unique to the Firebase project. Do NOT use this value to
+            // authenticate with your backend server, if you have one. Use
+            // FirebaseUser.getToken() instead.
+            val uid = user.uid
+        }
+        if (user != null) {
+            checkIfFirstRun()
+        } else {
+            signInAnonymously()
+        }
+
+        parentLayout = findViewById(android.R.id.content)
     }
+
+    private fun checkIfFirstRun() {
+        Log.w("activity", "first time")
+        fetchImagesFromFireBaseDB()
+    }
+
+    private fun signInAnonymously() {
+        auth!!.signInAnonymously().addOnSuccessListener(this@MainActivity,
+            OnSuccessListener<AuthResult?> { checkIfFirstRun() })
+        auth!!.signInAnonymously().addOnFailureListener(this@MainActivity,
+            OnFailureListener { exception ->
+                Toast.makeText(this@MainActivity, "signInAnonymously:FAILURE", Toast.LENGTH_LONG)
+                    .show()
+                Log.e("Deepak", "signInAnonymously:FAILURE", exception)
+                retrySnackBar()
+            })
+    }
+
+    private fun retrySnackBar() {
+        Snackbar.make(parentLayout!!, "This is main activity", Snackbar.LENGTH_LONG)
+            .setAction("Retry") {
+                auth = FirebaseAuth.getInstance()
+                val user = auth!!.currentUser
+                if (user != null) {
+                    checkIfFirstRun()
+                } else {
+                    signInAnonymously()
+                }
+            }
+            .setActionTextColor(resources.getColor(android.R.color.holo_red_light))
+            .show()
+    }
+
+    private fun fetchImagesFromFireBaseDB() {
+        val ref = FirebaseStorage.getInstance().getReferenceFromUrl(IMAGE_URL)
+        ref.listAll().addOnSuccessListener { listResult: ListResult ->
+            onSuccess(
+                listResult
+            )
+        }
+        ref.listAll().addOnFailureListener { e: Exception -> failure(e) }
+    }
+
+    private fun failure(e: Exception) {
+//        Log.d("Deepak e")
+        retrySnackBar()
+    }
+
+    private fun onSuccess(listResult: ListResult) {
+        list.clear()
+        for (i in listResult.items.indices) {
+//            Toast.makeText(getApplicationContext(),"Count "+listResult.getItems().size(),Toast.LENGTH_LONG).show();
+            listResult.items[i].downloadUrl.addOnSuccessListener { uri ->
+                Log.d("Deepak Spalsh uri", uri.toString())
+                saveImagesFromServer(uri.toString())
+            }
+        }
+//        goToCarouselScreen()
+    }
+
+    private fun saveImagesFromServer(imageUrl: String) {
+        imagePath.add(imageUrl)
+        tinyDB!!.putListString("MyUsers", imagePath)
+        //        tinyDB.getListString("MyUsers");
+        Log.d("Deepak getDB ", tinyDB!!.getListString("MyUsers").toString())
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            Log.v("Deepak", "Permission: " + permissions[0] + "was " + grantResults[0])
+            //resume tasks needing this permission
+            checkIfFirstRun()
+        }
+    }
+
+//    private fun goToCarouselScreen() {
+//        Handler().postDelayed(Runnable { /* Create an Intent that will start the Menu-Activity. */
+//            progressBar!!.hide()
+//            splashVideo!!.stopPlayback()
+//            val mainIntent = Intent(this@SplashActivity, HomePage::class.java)
+//            this@SplashActivity.startActivity(mainIntent)
+//            this@SplashActivity.finish()
+//        }, SPLASH_DISPLAY_LENGTH)
+//    }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
