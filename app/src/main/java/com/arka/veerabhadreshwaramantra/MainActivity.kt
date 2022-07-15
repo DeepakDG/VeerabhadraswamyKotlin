@@ -129,6 +129,7 @@ class MainActivity : AppCompatActivity() {
         recyclerview.adapter = adapter
 
         tinyDB = TinyDB(applicationContext)
+        //firebase working
         auth = Firebase.auth
         val user = Firebase.auth.currentUser
         user?.let {
