@@ -16,9 +16,9 @@ class ViewPagerDashboard : AppCompatActivity() {
         setContentView(R.layout.viewpager_dashboard)
 
         val imagesList = listOf(
-            R.drawable.ic_launcher_background,
-            R.drawable.virabhadra,
-            R.drawable.virabhadra
+            R.string.vadapu3,
+            R.string.vadapu3,
+            R.string.vadapu3
         )
         btnPrevious = findViewById(R.id.btnPrevious)
         btnNext = findViewById(R.id.btnNext)

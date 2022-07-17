@@ -1,63 +1,33 @@
 {
   "project_info": {
-    "project_number": "801366528523",
-    "firebase_url": "https://veerabhadraswamywallpaper.firebaseio.com",
-    "project_id": "veerabhadraswamywallpaper",
-    "storage_bucket": "veerabhadraswamywallpaper.appspot.com"
+    "project_number": "312956097356",
+    "project_id": "veerabhadraswamymantra",
+    "storage_bucket": "veerabhadraswamymantra.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:801366528523:android:d52aa4ac93531bec20ad0e",
+        "mobilesdk_app_id": "1:312956097356:android:da51985ac6c983833cf5e9",
         "android_client_info": {
           "package_name": "com.arka.veerabhadreshwaramantra"
         }
       },
       "oauth_client": [
         {
-          "client_id": "801366528523-4v065v72pgrg3kfobfha72t8a5pkvs9c.apps.googleusercontent.com",
+          "client_id": "312956097356-l6h88bj7q5d110nfta7kt1ahms6er5g9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCOxEedXhY2LkL9eNq7egmKaFg3f4Vn1CA"
+          "current_key": "AIzaSyA1dKwA7Eyc0wp1JwNkASOm0NmmK8MYtU4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "801366528523-4v065v72pgrg3kfobfha72t8a5pkvs9c.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:801366528523:android:ea4be3a3e5148f1520ad0e",
-        "android_client_info": {
-          "package_name": "com.arkha.veerabhadrawallpaper"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "801366528523-4v065v72pgrg3kfobfha72t8a5pkvs9c.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCOxEedXhY2LkL9eNq7egmKaFg3f4Vn1CA"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "801366528523-4v065v72pgrg3kfobfha72t8a5pkvs9c.apps.googleusercontent.com",
+              "client_id": "312956097356-l6h88bj7q5d110nfta7kt1ahms6er5g9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

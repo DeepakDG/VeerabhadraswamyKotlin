@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class ViewPagerAdapter(
@@ -29,10 +30,10 @@ class ViewPagerAdapter(
 
     class ViewPagerHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        private val ivSliderImage = itemView.findViewById<ImageView>(R.id.ivSliderImage)
+        private val ivSliderImage = itemView.findViewById<TextView>(R.id.ivSliderImage)
 
         fun bind(image: Int) {
-            ivSliderImage.setImageResource(image)
+            ivSliderImage.setText(image)
         }
     }
 }
