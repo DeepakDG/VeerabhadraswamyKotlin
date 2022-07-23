@@ -7,10 +7,14 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
-class ListViewCustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adapter<ListViewCustomAdapter.ViewHolder>() {
+class ListViewCustomAdapter(private val mList: List<ItemsViewModel>) :
+    RecyclerView.Adapter<ListViewCustomAdapter.ViewHolder>() {
+
+    companion object {
+        val key = "Position"
+    }
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -32,9 +36,11 @@ class ListViewCustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerV
 
         // sets the text to the textview from our itemHolder class
         holder.textView.text = ItemsViewModel.text
-        holder.itemView.setOnClickListener{
-            Toast.makeText(it.context,"clicked"+it,Toast.LENGTH_LONG).show()
-            it.context.startActivity(Intent(it.context, ViewPagerDashboard::class.java))
+        holder.itemView.setOnClickListener {
+            Toast.makeText(it.context, "clicked" + holder.position, Toast.LENGTH_LONG).show()
+            val intent = Intent(it.context, ViewPagerDashboard::class.java)
+            intent.putExtra("Position", holder.layoutPosition)
+            it.context.startActivity(intent)
         }
 
     }
