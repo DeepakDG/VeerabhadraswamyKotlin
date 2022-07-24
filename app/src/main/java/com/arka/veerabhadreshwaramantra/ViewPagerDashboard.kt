@@ -2,7 +2,6 @@ package com.arka.veerabhadreshwaramantra
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 
@@ -18,7 +17,7 @@ class ViewPagerDashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.viewpager_dashboard)
         val pos = intent.getIntExtra("Position", 0)
-        Toast.makeText(applicationContext, "Rel" + pos, Toast.LENGTH_LONG).show()
+//        Toast.makeText(applicationContext, "Rel" + pos, Toast.LENGTH_LONG).show()
         if (pos == 0) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸುಪ್ರಭಾತ"
             imagesList = listOf(

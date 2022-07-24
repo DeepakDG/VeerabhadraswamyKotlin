@@ -7,8 +7,6 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
-import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -86,7 +84,7 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
-        if(currentUser != null){
+        if (currentUser != null) {
 //            reload();
         }
     }
@@ -165,8 +163,8 @@ class MainActivity : AppCompatActivity() {
             OnSuccessListener<AuthResult?> { checkIfFirstRun() })
         auth!!.signInAnonymously().addOnFailureListener(this@MainActivity,
             OnFailureListener { exception ->
-                Toast.makeText(this@MainActivity, "signInAnonymously:FAILURE", Toast.LENGTH_LONG)
-                    .show()
+//                Toast.makeText(this@MainActivity, "signInAnonymously:FAILURE", Toast.LENGTH_LONG)
+//                    .show()
                 Log.e("Deepak", "signInAnonymously:FAILURE", exception)
                 retrySnackBar()
             })
