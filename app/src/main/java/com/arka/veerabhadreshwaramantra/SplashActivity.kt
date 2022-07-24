@@ -3,9 +3,9 @@ package com.arka.veerabhadreshwaramantra
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.os.PersistableBundle
+import android.view.animation.AnimationUtils
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.*
 
 class SplashActivity : AppCompatActivity() {
 
@@ -16,6 +16,11 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splashscreen)
+
+        val textView = findViewById<TextView>(R.id.splash_textview)
+        val animation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
+        //starting the animation
+        textView.startAnimation(animation)
 
         Handler().postDelayed({
             // This method will be executed once the timer is over
