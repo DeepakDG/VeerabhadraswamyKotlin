@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#424242">
 
 
     <TextView
         android:id="@+id/ivSliderImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:justificationMode="inter_word"
+        android:textSize="18sp"
+        android:typeface="sans"
         />
 
 </LinearLayout>
