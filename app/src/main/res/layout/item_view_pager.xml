@@ -12,7 +12,7 @@
         android:layout_gravity="center"
         android:justificationMode="inter_word"
         android:lineSpacingExtra="4dp"
-        android:lineSpacingMultiplier="1.2"
+        android:lineSpacingMultiplier="0.9"
         android:padding="28dp"
         android:scrollbars="vertical"
         android:textSize="18sp"
