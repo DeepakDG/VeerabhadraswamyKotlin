@@ -1,6 +1,7 @@
 package com.arka.veerabhadreshwaramantra;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.widget.VideoView;
@@ -63,17 +64,17 @@ public class HomePage extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(HomePage.this);
-        builder.setTitle("Exit App")
-                .setMessage("Are you sure, you want to Exit ?")
+        builder.setTitle("ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ಗಮಿಸಿ")
+                .setMessage("ಮುಖ್ಯ ಮುಖಪುಟ ಪರದೆಗೆ ಹೋಗುವುದನ್ನು ಖಚಿತಪಡಿಸಿ ?")
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton("ಹೌದು", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
-                        finishAffinity();
+                        startActivity(new Intent(HomePage.this,MainActivity.class));
                     }
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton("ಇಲ್ಲ", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();

@@ -29,10 +29,9 @@
             android:name=".SplashActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Veerabhadreshwaramantra.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -44,6 +43,8 @@
         <activity android:name=".ImageDetailsActivity"
             android:exported="true"/>
         <activity android:name=".ViewPagerDashboard"
+            android:exported="true"/>
+        <activity android:name=".AboutScreen"
             android:exported="true"/>
     </application>
 

@@ -1,11 +1,14 @@
 <resources>
-    <string name="app_name">ಶ್ರೀ ವೀರಭದ್ರಸ್ವಾಮಿ ಮಂತ್ರಗಳು</string>
-    <string name="action_settings">About</string>
+    <string name="app_name">ಶ್ರೀ ವೀರಭದ್ರಸ್ವಾಮಿ ಸ್ತೋತ್ರಮಾಲಾ</string>
+    <string name="about_head">ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಪ್ರಚಾರ ಸಮತಿ, ಕರ್ನಾಟಕ</string>
+    <string name="contact_head">ಸಂಪರ್ಕಿಸಿ</string>
+    <string name="action_settings">ಅಪ್ಲಿಕೇಶನ್ ಬಗ್ಗೆ</string>
+    <string name="app_version">ಅಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿ : 1.0.0</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="next">ಮುಂದಿನ</string>
+    <string name="previous">ಹಿಂದಿನ</string>
     <string name="app_id">ca-app-pub-2719647944299073~7912683496</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-2719647944299073/9964131764</string>
     <string name="title_activity_settings">SettingsActivity</string>

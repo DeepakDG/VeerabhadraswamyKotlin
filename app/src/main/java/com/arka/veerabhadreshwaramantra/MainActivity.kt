@@ -254,9 +254,14 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.action_settings -> newAboutCall()
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    private fun newAboutCall(): Boolean {
+        startActivity(Intent(this@MainActivity, AboutScreen::class.java))
+        return true
     }
 
 //    override fun onSupportNavigateUp(): Boolean {

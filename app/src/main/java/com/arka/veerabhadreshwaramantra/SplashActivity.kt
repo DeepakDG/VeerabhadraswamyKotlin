@@ -17,7 +17,12 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splashscreen)
 
+        if (supportActionBar != null) {
+            supportActionBar?.hide()
+        }
+
         val textView = findViewById<TextView>(R.id.splash_textview)
+        textView.setText(R.string.app_name)
         val animation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         //starting the animation
         textView.startAnimation(animation)
