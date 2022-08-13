@@ -19,7 +19,6 @@ public class HomePage extends AppCompatActivity {
     public CarouselPagerAdapter adapter;
     public ViewPager pager;
 //    public static int count = 10; //ViewPager items size
-    private AlertDialog dialog;
     private TinyDB tinyDB;
     private ArrayList<String> imagePath = new ArrayList<>();
     private ContentLoadingProgressBar progressBar;
@@ -58,31 +57,6 @@ public class HomePage extends AppCompatActivity {
         pager.setOffscreenPageLimit(3);
         progressBar.hide();
 
-    }
-
-
-    @Override
-    public void onBackPressed() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(HomePage.this);
-        builder.setTitle("ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ಗಮಿಸಿ")
-                .setMessage("ಮುಖ್ಯ ಮುಖಪುಟ ಪರದೆಗೆ ಹೋಗುವುದನ್ನು ಖಚಿತಪಡಿಸಿ ?")
-                .setCancelable(false)
-                .setPositiveButton("ಹೌದು", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                        startActivity(new Intent(HomePage.this,MainActivity.class));
-                    }
-                })
-                .setNegativeButton("ಇಲ್ಲ", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
-        //Creating dialog box
-        dialog = builder.create();
-        dialog.show();
     }
 }
 
