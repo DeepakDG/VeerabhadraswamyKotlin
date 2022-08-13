@@ -1,6 +1,7 @@
 package com.arka.veerabhadreshwaramantra
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
@@ -172,10 +173,17 @@ class ViewPagerDashboard : AppCompatActivity() {
         actionbar!!.title = heading
         //set back button
         actionbar.setDisplayHomeAsUpEnabled(true)
-        actionbar.setDisplayHomeAsUpEnabled(true)
 
         btnPrevious = findViewById(R.id.btnPrevious)
         btnNext = findViewById(R.id.btnNext)
+
+        if(imagesList.size > 1){
+            btnPrevious.visibility = View.VISIBLE
+            btnNext.visibility = View.VISIBLE
+        }else{
+            btnPrevious.visibility = View.GONE
+            btnNext.visibility = View.GONE
+        }
         val adapter = ViewPagerAdapter(imagesList)
         viewPager2 = findViewById(R.id.viewPager)
 //        viewPager2.setCurrentItem(0)
