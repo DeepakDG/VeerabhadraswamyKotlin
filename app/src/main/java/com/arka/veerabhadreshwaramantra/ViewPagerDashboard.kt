@@ -158,6 +158,11 @@ class ViewPagerDashboard : AppCompatActivity() {
                 R.string.vadapu3,
                 R.string.vadapu3
             )
+        } else if (pos == 20){
+            heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ"
+            imagesList = listOf(
+                R.string.badrakaliastaka
+            )
         } else {
             heading = "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು"
             imagesList = listOf(
