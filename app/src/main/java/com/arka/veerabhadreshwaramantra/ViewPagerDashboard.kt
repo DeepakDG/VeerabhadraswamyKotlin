@@ -22,22 +22,23 @@ class ViewPagerDashboard : AppCompatActivity() {
         if (pos == 0) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸುಪ್ರಭಾತ"
             imagesList = listOf(
-                R.string.subrathanam
+                R.string.suprabathanam
             )
         } else if (pos == 1) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಕವಚಂ"
             imagesList = listOf(
-                R.string.kavacha2
+                R.string.kavacham
             )
         } else if (pos == 2) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ದಂಡಕಂ"
             imagesList = listOf(
-                R.string.dhandankam
+                R.string.dhandakam,
+                R.string.dhandakam1
             )
         } else if (pos == 3) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ತಾರಾವಳಿ"
             imagesList = listOf(
-                R.string.tharalavali
+                R.string.tharavali
             )
         } else if (pos == 4) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರಾಷ್ಟಕಂ"
@@ -47,27 +48,27 @@ class ViewPagerDashboard : AppCompatActivity() {
         } else if (pos == 5) {
             heading = "ಶ್ರೀ ಭದ್ರ ಕವಚಂ"
             imagesList = listOf(
-                R.string.kavacha
+                R.string.kavacham
             )
         } else if (pos == 6) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮಸ್ತೋತ"
             imagesList = listOf(
-                R.string.sahasranamavali
+                R.string.atha_sahasranamavali
             )
         } else if (pos == 7) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮವಳಿ"
             imagesList = listOf(
-                R.string.vadapu3
+                R.string.sahasrastotram
             )
         } else if (pos == 8) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ ಸ್ತೋತ್ರO"
             imagesList = listOf(
-                R.string.astothara_shathanamavali
+                R.string.shatanamavali
             )
         } else if (pos == 9) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ"
             imagesList = listOf(
-                R.string.shathanamavali
+                R.string.shatanamavali
             )
         } else if (pos == 10) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ವಡಪುಗಳು"
@@ -93,7 +94,11 @@ class ViewPagerDashboard : AppCompatActivity() {
                 R.string.vadapu19,
                 R.string.vadapu20,
                 R.string.vadapu21,
-                R.string.vadapu22
+                R.string.vadapu22,
+                R.string.vadapu23,
+                R.string.vadapu24,
+                R.string.vadapu25,
+                R.string.vadapu26
             )
         } else if (pos == 11) {
             heading = "ಗುಗ್ಗುಳದ ಬಗ್ಗೆ ಮಾಹಿತಿ"
@@ -103,72 +108,68 @@ class ViewPagerDashboard : AppCompatActivity() {
         } else if (pos == 12) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಂಕ್ಷಿಪ್ತ ಪರಿಚಯ"
             imagesList = listOf(
-                R.string.vadapu3,
-                R.string.vadapu3,
-                R.string.vadapu3
+
             )
         } else if (pos == 13) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಆಚರಣೆಗಳು"
             imagesList = listOf(
-                R.string.vadapu3,
-                R.string.vadapu3,
-                R.string.vadapu3
+
             )
         } else if (pos == 14) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಪ್ರಾರ್ಥನ"
             imagesList = listOf(
-                R.string.vadapu3,
-                R.string.vadapu3,
-                R.string.vadapu3
+
             )
         } else if (pos == 15) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳ ಶ್ಲೋಕ"
             imagesList = listOf(
-                R.string.mangalarathi,
-                R.string.mangalarathi2,
-                R.string.mangalarathi3,
+                R.string.mangalarathi1,
+                R.string.managalarathi2,
+                R.string.managalarathi3,
                 R.string.mangalarathi4,
-                R.string.managalarathi5,
+                R.string.mangalarathi5,
                 R.string.mangalarathi6,
-                R.string.mangalarathi7
+                R.string.mangalarathi7,
+                R.string.mangalarathi8,
+                R.string.mangalarathi9,
+                R.string.mangalarathi10,
+                R.string.mangalarathi11
             )
         } else if (pos == 16) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಶತಕ"
             imagesList = listOf(
-                R.string.shathaka
+                R.string.shatanamavali
             )
         } else if (pos == 17) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳ"
             imagesList = listOf(
-                R.string.vadapu3,
-                R.string.vadapu3,
-                R.string.vadapu3
+
             )
         } else if (pos == 18) {
             heading = "ದ್ವಾತ್ರಿಂಶದ್ಭುಜ ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ"
             imagesList = listOf(
-                R.string.vadapu3,
-                R.string.vadapu3,
-                R.string.vadapu3
+                R.string.dhyanam
+
             )
         } else if (pos == 19) {
             heading = "ಶ್ರೀ ಶರಭ ಹೃದಯ ಸ್ತೋತ್ರ"
             imagesList = listOf(
-                R.string.vadapu3,
-                R.string.vadapu3,
-                R.string.vadapu3
+
             )
-        } else if (pos == 20){
+        } else if (pos == 20) {
             heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ"
             imagesList = listOf(
                 R.string.badrakaliastaka
             )
-        } else {
+        } else if (pos == 21) {
             heading = "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು"
             imagesList = listOf(
-                R.string.vadapu3,
-                R.string.vadapu3,
-                R.string.vadapu3
+                R.string.sharabhoshanith
+            )
+        } else {
+            heading = "ಪುಷ್ಪಾಂಜಲಿ"
+            imagesList = listOf(
+                R.string.pushpajali
             )
         }
 
@@ -182,10 +183,10 @@ class ViewPagerDashboard : AppCompatActivity() {
         btnPrevious = findViewById(R.id.btnPrevious)
         btnNext = findViewById(R.id.btnNext)
 
-        if(imagesList.size > 1){
+        if (imagesList.size > 1) {
             btnPrevious.visibility = View.VISIBLE
             btnNext.visibility = View.VISIBLE
-        }else{
+        } else {
             btnPrevious.visibility = View.GONE
             btnNext.visibility = View.GONE
         }

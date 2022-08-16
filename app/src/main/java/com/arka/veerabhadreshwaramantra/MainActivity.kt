@@ -73,9 +73,11 @@ class MainActivity : AppCompatActivity() {
 
         "ಶ್ರೀ ಶರಭ ಹೃದಯ ಸ್ತೋತ್ರ" to 20,
 
-        "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು" to 21,
+        "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ" to 21,
 
-        "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ" to 22
+        "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು" to 22,
+
+        "ಪುಷ್ಪಾಂಜಲಿ" to 23
     )
     private val IMAGE_URL = "gs://veerabhadraswamywallpaper.appspot.com"
     private lateinit var auth: FirebaseAuth
