@@ -18,7 +18,6 @@ import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.ListResult
 
@@ -56,27 +55,19 @@ class MainActivity : AppCompatActivity() {
 
         "ಗುಗ್ಗುಳದ ಬಗ್ಗೆ ಮಾಹಿತಿ" to 12,
 
-        "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಂಕ್ಷಿಪ್ತ ಪರಿಚಯ" to 13,
+        "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳಾರತಿ ಪದಗಳು" to 13,
 
-        "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಆಚರಣೆಗಳು" to 14,
+        "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಶತಕ" to 14,
 
-        "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಪ್ರಾರ್ಥನೆ" to 15,
+        "ದ್ವಾತ್ರಿಂಶದ್ಭುಜ ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ" to 15,
 
-        "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳ ಶ್ಲೋಕ" to 16,
+        "ಶ್ರೀ ಶರಭ ಹೃದಯ ಸ್ತೋತ್ರ" to 16,
 
-        "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಶತಕ" to 17,
+        "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ" to 17,
 
-        "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳ" to 18,
+        "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು" to 18,
 
-        "ದ್ವಾತ್ರಿಂಶದ್ಭುಜ ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ" to 19,
-
-        "ಶ್ರೀ ಶರಭ ಹೃದಯ ಸ್ತೋತ್ರ" to 20,
-
-        "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ" to 21,
-
-        "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು" to 22,
-
-        "ಪುಷ್ಪಾಂಜಲಿ" to 23
+        "ಪುಷ್ಪಾಂಜಲಿ" to 19
     )
     private val IMAGE_URL = "gs://veerabhadraswamymantra.appspot.com/"
     private lateinit var auth: FirebaseAuth
@@ -92,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         if (currentUser != null) {
             checkIfFirstRun()
-        }else{
+        } else {
             signInAnonymously()
         }
     }

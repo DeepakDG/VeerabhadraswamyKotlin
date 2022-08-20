@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#424242">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,6 +28,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lyButtonsBg"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"

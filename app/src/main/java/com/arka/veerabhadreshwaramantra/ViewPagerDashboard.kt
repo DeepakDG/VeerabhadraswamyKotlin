@@ -3,6 +3,7 @@ package com.arka.veerabhadreshwaramantra
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 
@@ -13,6 +14,7 @@ class ViewPagerDashboard : AppCompatActivity() {
     private lateinit var btnNext: Button
     private var imagesList = listOf<Int>()
     private lateinit var heading: String
+    private lateinit var lyButtonsBg: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -106,22 +108,7 @@ class ViewPagerDashboard : AppCompatActivity() {
                 R.string.guggala
             )
         } else if (pos == 12) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಂಕ್ಷಿಪ್ತ ಪರಿಚಯ"
-            imagesList = listOf(
-
-            )
-        } else if (pos == 13) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಆಚರಣೆಗಳು"
-            imagesList = listOf(
-
-            )
-        } else if (pos == 14) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಪ್ರಾರ್ಥನ"
-            imagesList = listOf(
-
-            )
-        } else if (pos == 15) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳ ಶ್ಲೋಕ"
+            heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳಾರತಿ ಪದಗಳು"
             imagesList = listOf(
                 R.string.mangalarathi1,
                 R.string.managalarathi2,
@@ -135,33 +122,27 @@ class ViewPagerDashboard : AppCompatActivity() {
                 R.string.mangalarathi10,
                 R.string.mangalarathi11
             )
-        } else if (pos == 16) {
+        } else if (pos == 13) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಶತಕ"
             imagesList = listOf(
                 R.string.shatanamavali
             )
-        } else if (pos == 17) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳ"
-            imagesList = listOf(
-
-            )
-        } else if (pos == 18) {
+        } else if (pos == 14) {
             heading = "ದ್ವಾತ್ರಿಂಶದ್ಭುಜ ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ"
             imagesList = listOf(
                 R.string.dhyanam
 
             )
-        } else if (pos == 19) {
+        } else if (pos == 15) {
             heading = "ಶ್ರೀ ಶರಭ ಹೃದಯ ಸ್ತೋತ್ರ"
             imagesList = listOf(
-
             )
-        } else if (pos == 20) {
+        } else if (pos == 16) {
             heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ"
             imagesList = listOf(
                 R.string.badrakaliastaka
             )
-        } else if (pos == 21) {
+        } else if (pos == 17) {
             heading = "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು"
             imagesList = listOf(
                 R.string.sharabhoshanith
@@ -182,11 +163,14 @@ class ViewPagerDashboard : AppCompatActivity() {
 
         btnPrevious = findViewById(R.id.btnPrevious)
         btnNext = findViewById(R.id.btnNext)
+        lyButtonsBg = findViewById(R.id.lyButtonsBg)
 
         if (imagesList.size > 1) {
             btnPrevious.visibility = View.VISIBLE
             btnNext.visibility = View.VISIBLE
+            lyButtonsBg.visibility = View.VISIBLE
         } else {
+            lyButtonsBg.visibility = View.GONE
             btnPrevious.visibility = View.GONE
             btnNext.visibility = View.GONE
         }
