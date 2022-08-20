@@ -18,8 +18,7 @@ import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.ListResult
 
@@ -79,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
         "ಪುಷ್ಪಾಂಜಲಿ" to 23
     )
-    private val IMAGE_URL = "gs://veerabhadraswamywallpaper.appspot.com"
+    private val IMAGE_URL = "gs://veerabhadraswamymantra.appspot.com/"
     private lateinit var auth: FirebaseAuth
     private val list: ArrayList<Long> = ArrayList()
     private var tinyDB: TinyDB? = null
@@ -89,9 +88,12 @@ class MainActivity : AppCompatActivity() {
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
+        auth = FirebaseAuth.getInstance()
         val currentUser = auth.currentUser
         if (currentUser != null) {
-//            reload();
+            checkIfFirstRun()
+        }else{
+            signInAnonymously()
         }
     }
 
@@ -100,12 +102,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-//        setSupportActionBar(binding.toolbar)
-
-//        val navController = findNavController(R.id.nav_host_fragment_content_main)
-//        appBarConfiguration = AppBarConfiguration(navController.graph)
-//        setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -134,27 +130,6 @@ class MainActivity : AppCompatActivity() {
 
         tinyDB = TinyDB(applicationContext)
         //firebase working
-        auth = Firebase.auth
-        val user = Firebase.auth.currentUser
-        user?.let {
-            // Name, email address, and profile photo Url
-            val name = user.displayName
-            val email = user.email
-            val photoUrl = user.photoUrl
-
-            // Check if user's email is verified
-            val emailVerified = user.isEmailVerified
-
-            // The user's ID, unique to the Firebase project. Do NOT use this value to
-            // authenticate with your backend server, if you have one. Use
-            // FirebaseUser.getToken() instead.
-            val uid = user.uid
-        }
-        if (user != null) {
-            checkIfFirstRun()
-        } else {
-            signInAnonymously()
-        }
 
         parentLayout = findViewById(android.R.id.content)
     }
