@@ -6,6 +6,9 @@ import android.widget.Button
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import java.io.BufferedReader
+import java.io.IOException
+import java.io.InputStreamReader
 
 class ViewPagerDashboard : AppCompatActivity() {
 
@@ -13,6 +16,7 @@ class ViewPagerDashboard : AppCompatActivity() {
     private lateinit var btnPrevious: Button
     private lateinit var btnNext: Button
     private var imagesList = listOf<Int>()
+    private var textLongList = listOf<String>()
     private lateinit var heading: String
     private lateinit var lyButtonsBg: LinearLayout
 
@@ -55,7 +59,7 @@ class ViewPagerDashboard : AppCompatActivity() {
         } else if (pos == 6) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮಸ್ತೋತ"
             imagesList = listOf(
-                R.string.atha_sahasranamavali
+                R.string.shatanamavali
             )
         } else if (pos == 7) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮವಳಿ"
@@ -195,6 +199,25 @@ class ViewPagerDashboard : AppCompatActivity() {
 //            }
         }
 
+    }
+
+    private fun getTermsString(): String {
+        val termsString = StringBuilder()
+        val reader: BufferedReader
+        try {
+            reader = BufferedReader(
+                InputStreamReader(assets.open("atha_sahasranamavali.txt"))
+            )
+            var str: String?
+            while (reader.readLine().also { str = it } != null) {
+                termsString.append(str)
+            }
+            reader.close()
+            return termsString.toString()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+        return ""
     }
 
     override fun onSupportNavigateUp(): Boolean {
