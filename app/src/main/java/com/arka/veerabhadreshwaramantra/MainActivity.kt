@@ -68,7 +68,13 @@ class MainActivity : AppCompatActivity() {
 
         "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು" to 18,
 
-        "ಪುಷ್ಪಾಂಜಲಿ" to 19
+        "ಪುಷ್ಪಾಂಜಲಿ" to 19,
+
+        "ವೀರಭದ್ರ ಮಹಾಮಂತ್ರ" to 20,
+
+        "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಸ್ತುತಿ" to 21,
+
+        "ಶ್ರೀ ವೀರಭದ್ರಾಷ್ಟೋತ್ತರ ಸ್ತೋತ್ರಂ" to 22
     )
     private val IMAGE_URL = "gs://veerabhadraswamymantra.appspot.com/"
     private lateinit var auth: FirebaseAuth
