@@ -12,12 +12,12 @@ public class CarouselPagerAdapter extends FragmentPagerAdapter implements ViewPa
     public final static float BIG_SCALE = 1.0f;
     public final static float SMALL_SCALE = 0.7f;
     public final static float DIFF_SCALE = BIG_SCALE - SMALL_SCALE;
-    private HomePage context;
+    private final HomePage context;
     ArrayList<String> imageArrayListPath = new ArrayList<>();
-    private FragmentManager fragmentManager;
+    private final FragmentManager fragmentManager;
     private float scale;
     private ArrayList<String> imagePath = new ArrayList<>();
-    private TinyDB tinyDB;
+    private final TinyDB tinyDB;
 
     public CarouselPagerAdapter(HomePage context, FragmentManager fm) {
         super(fm);

@@ -131,9 +131,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun signInAnonymously() {
-        auth!!.signInAnonymously().addOnSuccessListener(this@MainActivity,
+        auth.signInAnonymously().addOnSuccessListener(this@MainActivity,
             OnSuccessListener<AuthResult?> { checkIfFirstRun() })
-        auth!!.signInAnonymously().addOnFailureListener(this@MainActivity,
+        auth.signInAnonymously().addOnFailureListener(this@MainActivity,
             OnFailureListener { exception ->
 //                Toast.makeText(this@MainActivity, "signInAnonymously:FAILURE", Toast.LENGTH_LONG)
 //                    .show()
@@ -146,7 +146,7 @@ class MainActivity : AppCompatActivity() {
         Snackbar.make(parentLayout!!, "This is main activity", Snackbar.LENGTH_LONG)
             .setAction("Retry") {
                 auth = FirebaseAuth.getInstance()
-                val user = auth!!.currentUser
+                val user = auth.currentUser
                 if (user != null) {
                     checkIfFirstRun()
                 } else {

@@ -9,8 +9,8 @@ import com.arka.veerabhadreshwaramantra.CarouselPagerAdapter
 class CarouselLinearLayout : LinearLayout {
     private var scale = CarouselPagerAdapter.BIG_SCALE
 
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) {}
-    constructor(context: Context?) : super(context) {}
+    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
+    constructor(context: Context?) : super(context)
 
     fun setScaleBoth(scale: Float) {
         this.scale = scale
