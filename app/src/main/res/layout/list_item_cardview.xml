@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:background="#C5CAE9">
+        android:background="@color/jungle_green">
 
         <ImageView
             android:id="@+id/imageview"
@@ -26,6 +26,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginLeft="15dp"
             android:text="Item"
+            android:textColor="@color/yellow"
             android:textSize="20sp"
             android:textStyle="bold" />
 

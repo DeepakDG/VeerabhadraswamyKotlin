@@ -3,7 +3,7 @@
     <style name="Theme.Veerabhadreshwaramantra" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
         ...
-        <item name="colorPrimary">@color/navy_500</item>
+        <item name="colorPrimary">@color/blue_dianne</item>
         <item name="colorPrimaryVariant">@color/navy_900</item>
         <item name="colorSecondary">@color/green_300</item>
         <item name="colorSecondaryVariant">@color/green_500</item>

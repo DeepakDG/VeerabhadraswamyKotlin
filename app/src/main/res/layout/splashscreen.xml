@@ -10,15 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/veerabhadraswamy"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:padding="8dp"/>
 
     <TextView
         android:id="@+id/splash_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textColor="@color/white"
+        android:textColor="@color/gold"
         android:gravity="center"
+        android:typeface="serif"
+        android:textStyle="bold"
         android:textSize="22sp"
         android:background="@drawable/poster_bg_new"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
