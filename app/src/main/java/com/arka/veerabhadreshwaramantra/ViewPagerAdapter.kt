@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class ViewPagerAdapter(
-    private val imagesList: List<Int>
+    private val imagesList: List<String>
 ) : RecyclerView.Adapter<ViewPagerAdapter.ViewPagerHolder>() {
 
 
@@ -26,12 +26,11 @@ class ViewPagerAdapter(
         return imagesList.size
     }
 
-
     class ViewPagerHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private val ivSliderImage = itemView.findViewById<TextView>(R.id.ivSliderImage)
 
-        fun bind(image: Int) {
+        fun bind(image: String) {
             ivSliderImage.setText(image)
         }
     }

@@ -15,7 +15,7 @@ class ViewPagerDashboard : AppCompatActivity() {
     private lateinit var viewPager2: ViewPager2
     private lateinit var btnPrevious: Button
     private lateinit var btnNext: Button
-    private var imagesList = listOf<Int>()
+    private var imagesList = listOf<String>()
     private var textLongList = listOf<String>()
     private lateinit var heading: String
     private lateinit var lyButtonsBg: LinearLayout
@@ -28,133 +28,137 @@ class ViewPagerDashboard : AppCompatActivity() {
         if (pos == 0) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸುಪ್ರಭಾತ"
             imagesList = listOf(
-                R.string.suprabathanam
+                getString(R.string.suprabathanam)
             )
         } else if (pos == 1) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಕವಚಂ"
             imagesList = listOf(
-                R.string.kavacham
+                getString(R.string.kavacham)
             )
         } else if (pos == 2) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ದಂಡಕಂ"
             imagesList = listOf(
-                R.string.dhandakam,
-                R.string.dhandakam1
+                getString(R.string.dhandakam),
+                getString(R.string.dhandakam1)
             )
         } else if (pos == 3) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ತಾರಾವಳಿ"
             imagesList = listOf(
-                R.string.tharavali
+                getString(R.string.tharavali)
             )
         } else if (pos == 4) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರಾಷ್ಟಕಂ"
             imagesList = listOf(
-                R.string.veerabhadrastaka
+                getString(R.string.veerabhadrastaka)
             )
         } else if (pos == 5) {
             heading = "ಶ್ರೀ ಭದ್ರ ಕವಚಂ"
             imagesList = listOf(
-                R.string.kavacham
+                getString(R.string.kavacham)
             )
         } else if (pos == 6) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮಸ್ತೋತ"
             imagesList = listOf(
-                R.string.shatanamavali
+                getString(R.string.sahasrastotram)
             )
         } else if (pos == 7) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮವಳಿ"
             imagesList = listOf(
-                R.string.sahasrastotram
+                getString(R.string.atha_sahasranamaval1) +
+                        getString(R.string.atha_sahasranamaval2) +
+                        getString(R.string.atha_sahasranamaval3) +
+                        getString(R.string.atha_sahasranamaval4) +
+                        getString(R.string.atha_sahasranamaval5)
             )
         } else if (pos == 8) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ ಸ್ತೋತ್ರO"
             imagesList = listOf(
-                R.string.shatanamavali
+                getString(R.string.shatanamavali)
             )
         } else if (pos == 9) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ"
             imagesList = listOf(
-                R.string.shatanamavali
+                getString(R.string.shatanamavali)
             )
         } else if (pos == 10) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ವಡಪುಗಳು"
             imagesList = listOf(
-                R.string.vadapu1,
-                R.string.vadapu2,
-                R.string.vadapu3,
-                R.string.vadapu4,
-                R.string.vadapu5,
-                R.string.vadapu6,
-                R.string.vadapu7,
-                R.string.vadapu8,
-                R.string.vadapu9,
-                R.string.vadapu10,
-                R.string.vadapu11,
-                R.string.vadapu12,
-                R.string.vadapu13,
-                R.string.vadapu14,
-                R.string.vadapu15,
-                R.string.vadapu16,
-                R.string.vadapu17,
-                R.string.vadapu18,
-                R.string.vadapu19,
-                R.string.vadapu20,
-                R.string.vadapu21,
-                R.string.vadapu22,
-                R.string.vadapu23,
-                R.string.vadapu24,
-                R.string.vadapu25,
-                R.string.vadapu26
+                getString(R.string.vadapu1),
+                getString(R.string.vadapu2),
+                getString(R.string.vadapu3),
+                getString(R.string.vadapu4),
+                getString(R.string.vadapu5),
+                getString(R.string.vadapu6),
+                getString(R.string.vadapu7),
+                getString(R.string.vadapu8),
+                getString(R.string.vadapu9),
+                getString(R.string.vadapu10),
+                getString(R.string.vadapu11),
+                getString(R.string.vadapu12),
+                getString(R.string.vadapu13),
+                getString(R.string.vadapu14),
+                getString(R.string.vadapu15),
+                getString(R.string.vadapu16),
+                getString(R.string.vadapu17),
+                getString(R.string.vadapu18),
+                getString(R.string.vadapu19),
+                getString(R.string.vadapu20),
+                getString(R.string.vadapu21),
+                getString(R.string.vadapu22),
+                getString(R.string.vadapu23),
+                getString(R.string.vadapu24),
+                getString(R.string.vadapu25),
+                getString(R.string.vadapu26)
             )
         } else if (pos == 11) {
             heading = "ಗುಗ್ಗುಳದ ಬಗ್ಗೆ ಮಾಹಿತಿ"
             imagesList = listOf(
-                R.string.guggala
+                getString(R.string.guggala)
             )
         } else if (pos == 12) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳಾರತಿ ಪದಗಳು"
             imagesList = listOf(
-                R.string.mangalarathi1,
-                R.string.managalarathi2,
-                R.string.managalarathi3,
-                R.string.mangalarathi4,
-                R.string.mangalarathi5,
-                R.string.mangalarathi6,
-                R.string.mangalarathi7,
-                R.string.mangalarathi8,
-                R.string.mangalarathi9,
-                R.string.mangalarathi10,
-                R.string.mangalarathi11
+                getString(R.string.mangalarathi1),
+                getString(R.string.managalarathi2),
+                getString(R.string.managalarathi3),
+                getString(R.string.mangalarathi4),
+                getString(R.string.mangalarathi5),
+                getString(R.string.mangalarathi6),
+                getString(R.string.mangalarathi7),
+                getString(R.string.mangalarathi8),
+                getString(R.string.mangalarathi9),
+                getString(R.string.mangalarathi10),
+                getString(R.string.mangalarathi11)
             )
         } else if (pos == 13) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಶತಕ"
             imagesList = listOf(
-                R.string.shatanamavali
+                getString(R.string.shatanamavali)
             )
         } else if (pos == 14) {
             heading = "ದ್ವಾತ್ರಿಂಶದ್ಭುಜ ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ"
             imagesList = listOf(
-                R.string.dhyanam
-
+                getString(R.string.dhyanam)
             )
         } else if (pos == 15) {
             heading = "ಶ್ರೀ ಶರಭ ಹೃದಯ ಸ್ತೋತ್ರ"
             imagesList = listOf(
+
             )
         } else if (pos == 16) {
             heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ"
             imagesList = listOf(
-                R.string.badrakaliastaka
+                getString(R.string.badrakaliastaka)
             )
         } else if (pos == 17) {
             heading = "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು"
             imagesList = listOf(
-                R.string.sharabhoshanith
+                getString(R.string.sharabhoshanith)
             )
         } else {
             heading = "ಪುಷ್ಪಾಂಜಲಿ"
             imagesList = listOf(
-                R.string.pushpajali
+                getString(R.string.pushpajali)
             )
         }
 
@@ -187,7 +191,6 @@ class ViewPagerDashboard : AppCompatActivity() {
             val currPos: Int = viewPager2.currentItem
 //            if (currPos != 0) {
             viewPager2.currentItem = currPos - 1
-
 //            }
         }
 
