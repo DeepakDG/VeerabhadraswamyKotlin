@@ -254,7 +254,7 @@ ll ಓಂ ಹ್ರೀಂ ಭಂ ಭಂ ಭದ್ರಕಾಳೈ ನಮಃ ll
 (ಮಂತ್ರ ಶಾಸ್ತ್ರೇ ಮಯಶಿಲ್ಪ ಚ  ಶ್ರೀತತ್ವನಿಧಿ)
     </string>
 
-    <string name="sahasrastotram">ಶ್ರೀವೀರಭದ್ರಸಹಸ್ರನಾಮಸ್ತೋತ್ರಮ್ \n\n
+    <string name="sahasrastotram1">ಶ್ರೀವೀರಭದ್ರಸಹಸ್ರನಾಮಸ್ತೋತ್ರಮ್ \n\n
 
         ಪೂರ್ವಭಾಗಮ್ । \n\n
 
@@ -513,6 +513,10 @@ ll ಓಂ ಹ್ರೀಂ ಭಂ ಭಂ ಭದ್ರಕಾಳೈ ನಮಃ ll
 ಕೌಂಡಿನ್ಯವತ್ಸವಾತ್ಸಲ್ಯಃ ಕಾಶ್ಯಪೋದಯದರ್ಪಣಃ ।
 ಕಣ್ವಕೌಶಿಕದುರ್ವಾಸಾಹೃದ್ಗುಹಾನ್ತರ್ನಿಧಿರ್ನಿಜಃ ॥ 80॥ \n\n
 
+    </string>
+
+    <string name="sahasrastotram2">
+
 ಕಪಿಲಾರಾಧನಪ್ರೀತಃ ಕರ್ಪೂರಧವಲದ್ಯುತಿಃ ।
 ಕರುಣಾವರುಣಃ ಕಾಳೀನಯನೋತ್ಸವಸಂಗರಃ ॥ 81॥ \n\n
 
@@ -692,6 +696,10 @@ ll ಓಂ ಹ್ರೀಂ ಭಂ ಭಂ ಭದ್ರಕಾಳೈ ನಮಃ ll
 
 ಅನನ್ತಮೂರ್ತಿರಕ್ಷೋಭ್ಯಃ ಕೃಪಾಮೂರ್ತಿಃ ಸುಕೀರ್ತಿಧೃತ್ ।
 ಅಕಲ್ಪಿತಾಮರತರುರಕಾಮಿತಸುಕಾಮಧುಕ್ ॥ 140॥ \n\n
+
+    </string>
+
+    <string name="sahasrastotram3">
 
 ಅಚಿನ್ತಿತಮಹಾಚಿನ್ತಾಮಣಿರ್ದೇವಶಿಖಾಮಣಿಃ ।
 ಅತೀನ್ದ್ರಿಯೋಽಜಿತಃ ಪ್ರಾಂಶುರ್ಬ್ರಹ್ಮವಿಷ್ಣ್ವಾದಿವನ್ದಿತಃ ॥ 141॥ \n\n
@@ -3122,6 +3130,8 @@ II ಓಂ ಶಾಂತಿಃ ಶಾಂತಿಃ ||
     <string name="about_head">ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಪ್ರಚಾರ ಸಮತಿ, ಕರ್ನಾಟಕ</string>
     <string name="contact_head">ಸಂಪರ್ಕಿಸಿ</string>
     <string name="action_settings">ಅಪ್ಲಿಕೇಶನ್ ಬಗ್ಗೆ</string>
+    <string name="shareApp">ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="rateUs">ಅಪ್ಲಿಕೇಶನ್ ರೇಟ್ ಮಾಡಿ</string>
     <string name="app_version">ಅಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿ : 1.0.0</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

@@ -23,6 +23,8 @@ class ViewPagerDashboard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.viewpager_dashboard)
+
+
         val pos = intent.getIntExtra("Position", 0)
 //        Toast.makeText(applicationContext, "Rel" + pos, Toast.LENGTH_LONG).show()
         if (pos == 0) {
@@ -59,7 +61,9 @@ class ViewPagerDashboard : AppCompatActivity() {
         } else if (pos == 6) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮಸ್ತೋತ"
             imagesList = listOf(
-                getString(R.string.sahasrastotram)
+                getString(R.string.sahasrastotram1) +
+                        getString(R.string.sahasrastotram2) +
+                        getString(R.string.sahasrastotram3)
             )
         } else if (pos == 7) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸಹಸ್ರನಾಮವಳಿ"
@@ -143,7 +147,7 @@ class ViewPagerDashboard : AppCompatActivity() {
         } else if (pos == 15) {
             heading = "ಶ್ರೀ ಶರಭ ಹೃದಯ ಸ್ತೋತ್ರ"
             imagesList = listOf(
-
+//                 getString(R.string.sharabhoshanith)
             )
         } else if (pos == 16) {
             heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ"

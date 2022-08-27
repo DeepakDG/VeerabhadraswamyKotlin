@@ -16,6 +16,7 @@ import com.arka.veerabhadreshwaramantra.databinding.ActivityMainBinding
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.play.core.review.ReviewManagerFactory
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.FirebaseStorage
@@ -227,12 +228,52 @@ class MainActivity : AppCompatActivity() {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> newAboutCall()
+            R.id.shareApp -> newShareAppCall()
+            R.id.rateUs -> newRateUsCall()
             else -> super.onOptionsItemSelected(item)
         }
     }
 
     private fun newAboutCall(): Boolean {
         startActivity(Intent(this@MainActivity, AboutScreen::class.java))
+        return true
+    }
+
+    private fun newShareAppCall(): Boolean {
+        try {
+            val shareIntent = Intent(Intent.ACTION_SEND)
+            shareIntent.type = "text/plain"
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "ಶ್ರೀ ವೀರಭದ್ರಸ್ವಾಮಿ ಸ್ತೋತ್ರಮಾಲಾ")
+            var shareMessage = "\nನಾನು ನಿಮಗೆ ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಶಿಫಾರಸು ಮಾಡುತ್ತೇನೆ\n\n"
+            shareMessage =
+                """
+               ${shareMessage}https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}
+               """.trimIndent()
+            shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
+            startActivity(Intent.createChooser(shareIntent, "choose one"))
+        } catch (e: java.lang.Exception) {
+            //e.toString();
+        }
+        return true
+    }
+
+    private fun newRateUsCall(): Boolean {
+        val manager = ReviewManagerFactory.create(applicationContext)
+        val request = manager.requestReviewFlow()
+        request.addOnCompleteListener { request ->
+            if (request.isSuccessful) {
+                // We got the ReviewInfo object
+                val reviewInfo = request.result
+                val flow = manager.launchReviewFlow(this, reviewInfo)
+                flow.addOnCompleteListener { _ ->
+                    // The flow has finished. The API does not indicate whether the user
+                    // reviewed or not, or even whether the review dialog was shown. Thus, no
+                    // matter the result, we continue our app flow.
+                }
+            } else {
+                // There was some problem, continue regardless of the result.
+            }
+        }
         return true
     }
 
