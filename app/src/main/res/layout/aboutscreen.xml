@@ -15,6 +15,7 @@
         android:text="@string/about_head"
         android:textColor="@color/black"
         android:textSize="20sp"
+        android:layout_marginBottom="20dp"
         android:textStyle="bold"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,6 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/app_version"
+        android:layout_marginBottom="20dp"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -58,8 +60,11 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="email"
+        android:text="ಇಮೇಲ್"
+        android:background="@color/burnt_sienna"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

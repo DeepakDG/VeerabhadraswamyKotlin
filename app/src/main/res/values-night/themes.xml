@@ -1,12 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Veerabhadreshwaramantra" parent="Theme.AppCompat.Light">
+    <style name="Theme.Veerabhadreshwaramantra" parent="Theme.AppCompat">
         <!-- Primary brand color. -->
         ...
         <item name="colorPrimary">@color/blue_dianne</item>
         <item name="colorPrimaryVariant">@color/navy_900</item>
         <item name="colorSecondary">@color/green_300</item>
         <item name="colorSecondaryVariant">@color/green_500</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.Veerabhadreshwaramantra.NoActionBar">

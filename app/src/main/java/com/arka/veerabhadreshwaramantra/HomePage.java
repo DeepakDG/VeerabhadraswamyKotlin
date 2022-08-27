@@ -4,8 +4,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.widget.VideoView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.widget.ContentLoadingProgressBar;
@@ -35,6 +37,10 @@ public class HomePage extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
+
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.setDisplayHomeAsUpEnabled(true);
+
         progressBar = findViewById(R.id.progressBar);
         pager = findViewById(R.id.myviewpager);
 //        setting_btn = findViewById(R.id.setting_icon);
@@ -57,6 +63,13 @@ public class HomePage extends AppCompatActivity {
         pager.setOffscreenPageLimit(3);
         progressBar.hide();
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        Log.d("CDA", "onBackPressed Called");
+        Intent setIntent = new Intent(HomePage.this,MainActivity.class);
+        startActivity(setIntent);
     }
 }
 
