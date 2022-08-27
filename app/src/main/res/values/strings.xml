@@ -3905,7 +3905,8 @@ II ಓಂ ಶಾಂತಿಃ ಶಾಂತಿಃ ||
     <string name="app_id">ca-app-pub-2719647944299073~7912683496</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-2719647944299073/9964131764</string>
     <string name="title_activity_settings">SettingsActivity</string>
-
+    <string name="download">ಡೌನ್ಲೋಡ್</string>
+    <string name="set_wallpaper">ವಾಲ್ಪೇಪರ್ ಆಯ್ಕೆ</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 

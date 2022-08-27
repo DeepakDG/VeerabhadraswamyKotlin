@@ -62,7 +62,7 @@
             android:layout_margin="4dp"
             android:layout_weight="0.5"
             android:background="@drawable/set_wallpaper_back"
-            android:text="set_wallpaper"
+            android:text="@string/set_wallpaper"
             android:textColor="@android:color/white"
             android:typeface="sans" />
 
@@ -74,7 +74,7 @@
             android:layout_margin="4dp"
             android:layout_weight="0.5"
             android:background="@drawable/set_wallpaper_back"
-            android:text="download"
+            android:text="@string/download"
             android:textColor="@android:color/white"
             android:typeface="sans" />
     </LinearLayout>
