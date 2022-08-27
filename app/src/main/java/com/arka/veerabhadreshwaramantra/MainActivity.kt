@@ -19,6 +19,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.android.play.core.review.ReviewManagerFactory
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.storage.BuildConfig
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.ListResult
 
@@ -128,7 +129,7 @@ class MainActivity : AppCompatActivity() {
 
         tinyDB = TinyDB(applicationContext)
         //firebase working
-
+        recyclerview.scheduleLayoutAnimation()
         parentLayout = findViewById(android.R.id.content)
     }
 
