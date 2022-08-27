@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.ActionBar;
@@ -63,6 +64,17 @@ public class HomePage extends AppCompatActivity {
         pager.setOffscreenPageLimit(3);
         progressBar.hide();
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
