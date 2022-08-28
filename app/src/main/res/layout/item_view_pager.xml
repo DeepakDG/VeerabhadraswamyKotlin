@@ -3,23 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="top"
     android:background="@color/burnt_sienna">
 
     <TextView
         android:id="@+id/ivSliderImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="top"
         android:justificationMode="inter_word"
         android:lineSpacingExtra="4dp"
         android:lineSpacingMultiplier="0.9"
         android:padding="28dp"
-        android:textColor="@color/white"
         android:scrollbars="vertical"
+        android:textColor="@color/white"
         android:textSize="21sp"
         android:typeface="sans"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

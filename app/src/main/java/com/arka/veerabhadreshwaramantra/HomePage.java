@@ -1,6 +1,5 @@
 package com.arka.veerabhadreshwaramantra;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -9,7 +8,6 @@ import android.view.MenuItem;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.viewpager.widget.ViewPager;
@@ -21,7 +19,7 @@ public class HomePage extends AppCompatActivity {
     public final static int LOOPS = 1000;
     public CarouselPagerAdapter adapter;
     public ViewPager pager;
-//    public static int count = 10; //ViewPager items size
+    //    public static int count = 10; //ViewPager items size
     private TinyDB tinyDB;
     private ArrayList<String> imagePath = new ArrayList<>();
     private ContentLoadingProgressBar progressBar;
@@ -80,8 +78,9 @@ public class HomePage extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Log.d("CDA", "onBackPressed Called");
-        Intent setIntent = new Intent(HomePage.this,MainActivity.class);
+        Intent setIntent = new Intent(HomePage.this, MainActivity.class);
         startActivity(setIntent);
+        finish();
     }
 }
 
