@@ -40,8 +40,7 @@ class ViewPagerDashboard : AppCompatActivity() {
         } else if (pos == 2) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ದಂಡಕಂ"
             imagesList = listOf(
-                getString(R.string.dhandakam),
-                getString(R.string.dhandakam1)
+                getString(R.string.dhandakam_original)
             )
         } else if (pos == 3) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ತಾರಾವಳಿ"
@@ -77,14 +76,9 @@ class ViewPagerDashboard : AppCompatActivity() {
         } else if (pos == 8) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ ಸ್ತೋತ್ರO"
             imagesList = listOf(
-//                getString(R.string.shatanamavali)
-            )
-        } else if (pos == 9) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ"
-            imagesList = listOf(
                 getString(R.string.shatanamavali)
             )
-        } else if (pos == 10) {
+        } else if (pos == 9) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ವಡಪುಗಳು"
             imagesList = listOf(
                 getString(R.string.vadapu1),
@@ -114,12 +108,12 @@ class ViewPagerDashboard : AppCompatActivity() {
                 getString(R.string.vadapu25),
                 getString(R.string.vadapu26)
             )
-        } else if (pos == 11) {
+        } else if (pos == 10) {
             heading = "ಗುಗ್ಗುಳದ ಬಗ್ಗೆ ಮಾಹಿತಿ"
             imagesList = listOf(
                 getString(R.string.guggala)
             )
-        } else if (pos == 12) {
+        } else if (pos == 11) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಮಂಗಳಾರತಿ ಪದಗಳು"
             imagesList = listOf(
                 getString(R.string.mangalarathi1),
@@ -134,7 +128,7 @@ class ViewPagerDashboard : AppCompatActivity() {
                 getString(R.string.mangalarathi10),
                 getString(R.string.mangalarathi11)
             )
-        } else if (pos == 13) {
+        } else if (pos == 12) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಶತಕ"
             imagesList = listOf(
                 getString(R.string.shathaka1) +
@@ -142,38 +136,37 @@ class ViewPagerDashboard : AppCompatActivity() {
                         getString(R.string.shathaka3) +
                         getString(R.string.shathaka4)
             )
-        } else if (pos == 14) {
+        } else if (pos == 13) {
             heading = "ದ್ವಾತ್ರಿಂಶದ್ಭುಜ ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ"
             imagesList = listOf(
                 getString(R.string.dhyanam)
             )
-        } else if (pos == 15) {
+        } else if (pos == 14) {
             heading = "ಶ್ರೀ ಶರಭ ಹೃದಯ ಸ್ತೋತ್ರ"
             imagesList = listOf(
 //                 getString(R.string.sharabhoshanith)
             )
-        } else if (pos == 16) {
+        } else if (pos == 15) {
             heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕ"
             imagesList = listOf(
                 getString(R.string.badrakaliastaka)
             )
-        } else if (pos == 17) {
+        } else if (pos == 16) {
             heading = "ಶ್ರೀ ಶರಭೋಪನಿಷತ್ತು"
             imagesList = listOf(
                 getString(R.string.sharabhoshanith)
             )
-        } else if (pos == 18) {
+        } else if (pos == 17) {
             heading = "ಪುಷ್ಪಾಂಜಲಿ"
             imagesList = listOf(
                 getString(R.string.pushpajali)
             )
-        } else if (pos == 19) {
+        } else if (pos == 18) {
             heading = "ವೀರಭದ್ರ ಮಹಾಮಂತ"
             imagesList = listOf(
-                getString(R.string.mahamantra1),
                 getString(R.string.mahamantra2)
             )
-        } else if (pos == 20) {
+        } else if (pos == 19) {
             heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಸ್ತುತಿ"
             imagesList = listOf(
                 getString(R.string.badrakalistuti)
