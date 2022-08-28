@@ -23,15 +23,15 @@ class AboutScreen : AppCompatActivity() {
         val btnMailUs = findViewById<Button>(R.id.btnMailUs)
         btnMailUs.setOnClickListener { view ->
             val mIntent = Intent(Intent.ACTION_SEND)
+            val addressees = arrayOf("veerabhadreshwarasamithi@gmail.com")
             mIntent.data = Uri.parse("mailto:")
             mIntent.type = "text/plain"
-            mIntent.putExtra(Intent.EXTRA_EMAIL,"veerabhadreshwarasamithi@gmail.com")
+            mIntent.putExtra(Intent.EXTRA_EMAIL, addressees)
             mIntent.putExtra(Intent.EXTRA_SUBJECT, "ಶ್ರೀ ವೀರಭದ್ರಸ್ವಾಮಿ ಸ್ತೋತ್ರಮಾಲಾ ಪ್ರತಿಕ್ರಿಯೆ")
             mIntent.putExtra(Intent.EXTRA_TEXT, "ನಮಸ್ಕಾರ")
             try {
                 startActivity(Intent.createChooser(mIntent, "Choose Email Client..."))
-            }
-            catch (e: Exception){
+            } catch (e: Exception) {
                 Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
             }
         }
