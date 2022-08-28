@@ -79,6 +79,7 @@ public class HomePage extends AppCompatActivity {
     public void onBackPressed() {
         Log.d("CDA", "onBackPressed Called");
         Intent setIntent = new Intent(HomePage.this, MainActivity.class);
+        setIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(setIntent);
         finish();
     }

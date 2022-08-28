@@ -291,7 +291,7 @@ class MainActivity : AppCompatActivity() {
             .setCancelable(false)
             .setPositiveButton("ಹೌದು") { dialog, which ->
                 dialog.cancel()
-                finish()
+                killActivity()
             }
             .setNegativeButton(
                 "ಇಲ್ಲ"
@@ -299,6 +299,10 @@ class MainActivity : AppCompatActivity() {
         //Creating dialog box
         dialog = builder.create()
         dialog.show()
+    }
+
+    private fun killActivity() {
+        finish()
     }
 //    override fun onSupportNavigateUp(): Boolean {
 //        val navController = findNavController(R.id.nav_host_fragment_content_main)

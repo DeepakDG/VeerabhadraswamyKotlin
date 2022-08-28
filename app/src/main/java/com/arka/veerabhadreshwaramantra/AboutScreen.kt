@@ -49,7 +49,10 @@ class AboutScreen : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        startActivity(Intent(this, MainActivity::class.java))
+        val mIntent = Intent(applicationContext, MainActivity::class.java)
+        mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(mIntent)
         finish()
     }
 }
