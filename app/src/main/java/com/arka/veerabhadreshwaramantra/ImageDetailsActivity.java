@@ -97,7 +97,7 @@ public class ImageDetailsActivity extends AppCompatActivity {
                         }
                     });
 
-                    Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "Wallpaper Set", Snackbar.LENGTH_LONG);
+                    Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "ಈ ಚಿತ್ರವನ್ನು ವಾಲ್ಪೇಪರ್ ಹೊಂದಿಸಲಾಗಿದೆ", Snackbar.LENGTH_LONG);
                     snackbar.show();
             }
         });
@@ -134,7 +134,7 @@ public class ImageDetailsActivity extends AppCompatActivity {
                 .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETION)
                 .setDestinationInExternalPublicDir(Environment.DIRECTORY_PICTURES, fileName + fileExtension);
         refid = downloadManager.enqueue(request);
-        Toast.makeText(getApplicationContext(),"Download Complete", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"ಡೌನ್ಲೋಡ್ ಪೂರ್ಣಗೊಂಡಿದೆ", Toast.LENGTH_LONG).show();
 //        list.add(refid);
     }
 

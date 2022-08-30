@@ -103,9 +103,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-            startActivity(Intent(applicationContext, HomePage::class.java))
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+
+            val mIntent = Intent(applicationContext, HomePage::class.java)
+            mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(mIntent)
         }
 
         // getting the recyclerview by its id
@@ -242,7 +246,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun newAboutCall(): Boolean {
-        startActivity(Intent(this@MainActivity, AboutScreen::class.java))
+        val mIntent = Intent(applicationContext, AboutScreen::class.java)
+        mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(mIntent)
         return true
     }
 
