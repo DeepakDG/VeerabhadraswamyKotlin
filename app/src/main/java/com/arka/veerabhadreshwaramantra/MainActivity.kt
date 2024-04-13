@@ -9,7 +9,7 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.ui.AppBarConfiguration
+import androidx.preference.PreferenceFragmentCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.arka.veerabhadreshwaramantra.databinding.ActivityMainBinding
@@ -26,13 +26,12 @@ import com.google.firebase.storage.ListResult
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var dialog: AlertDialog
 
     // This loop will create 20 Views containing
     // the image with the count of view
-    val dashboardList = mutableMapOf<String, Int>(
+    private val dashboardList = mutableMapOf<String, Int>(
         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸುಪ್ರಭಾತ" to 1,
 
         "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಕವಚಂ" to 2,
@@ -103,9 +102,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.fab.setOnClickListener { view ->
-//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                .setAction("Action", null).show()
-
             val mIntent = Intent(applicationContext, HomePage::class.java)
             mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
@@ -216,17 +212,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//    private fun goToCarouselScreen() {
-//        Handler().postDelayed(Runnable { /* Create an Intent that will start the Menu-Activity. */
-//            progressBar!!.hide()
-//            splashVideo!!.stopPlayback()
-//            val mainIntent = Intent(this@SplashActivity, HomePage::class.java)
-//            this@SplashActivity.startActivity(mainIntent)
-//            this@SplashActivity.finish()
-//        }, SPLASH_DISPLAY_LENGTH)
-//    }
-
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
@@ -241,6 +226,7 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> newAboutCall()
             R.id.shareApp -> newShareAppCall()
             R.id.rateUs -> newRateUsCall()
+            R.id.themeMenu -> newthemeScreen()
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -270,6 +256,15 @@ class MainActivity : AppCompatActivity() {
         }
         return true
     }
+
+    private fun newthemeScreen() : Boolean{
+        val mIntent = Intent(applicationContext, SettingScreenActivity::class.java)
+        mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(mIntent)
+        return true
+    }
+
 
     private fun newRateUsCall(): Boolean {
         val manager = ReviewManagerFactory.create(applicationContext)
@@ -311,9 +306,4 @@ class MainActivity : AppCompatActivity() {
     private fun killActivity() {
         finish()
     }
-//    override fun onSupportNavigateUp(): Boolean {
-//        val navController = findNavController(R.id.nav_host_fragment_content_main)
-//        return navController.navigateUp(appBarConfiguration)
-//                || super.onSupportNavigateUp()
-//    }
 }

@@ -1,0 +1,13 @@
+package com.arka.veerabhadreshwaramantra
+
+import android.os.Bundle
+import android.preference.PreferenceFragment
+
+class SettingsScreen : PreferenceFragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // below line is used to add preference
+        // fragment from our xml folder.
+        addPreferencesFromResource(R.xml.preference)
+    }
+}

@@ -46,6 +46,8 @@
             android:exported="true"/>
         <activity android:name=".AboutScreen"
             android:exported="true"/>
+        <activity android:name=".SettingScreenActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>
