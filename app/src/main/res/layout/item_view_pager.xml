@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="top"
-    android:background="@color/burnt_sienna">
+    android:layout_gravity="top">
 
     <TextView
         android:id="@+id/ivSliderImage"

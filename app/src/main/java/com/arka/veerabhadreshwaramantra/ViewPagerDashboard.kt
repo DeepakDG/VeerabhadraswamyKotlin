@@ -1,10 +1,12 @@
 package com.arka.veerabhadreshwaramantra
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.viewpager2.widget.ViewPager2
 import java.io.BufferedReader
 import java.io.IOException
@@ -13,18 +15,20 @@ import java.io.InputStreamReader
 class ViewPagerDashboard : AppCompatActivity() {
 
     private lateinit var viewPager2: ViewPager2
-    private lateinit var btnPrevious: Button
-    private lateinit var btnNext: Button
     private var imagesList = listOf<String>()
     private var textLongList = listOf<String>()
     private lateinit var heading: String
-    private lateinit var lyButtonsBg: LinearLayout
+    private var tinyDB: TinyDB? = null
+    private lateinit var activity_main:ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.viewpager_dashboard)
-
-
+        setContentView(R.layout.contentdetails)
+        tinyDB = TinyDB(applicationContext)
+        val themeColor = tinyDB!!.getInt("SelectedColor");
+        Log.d("themeColor ", themeColor.toString());
+        activity_main = findViewById<ConstraintLayout>(R.id.dashboard_details_content)
+        activity_main.setBackgroundColor(themeColor)
         val pos = intent.getIntExtra("Position", 0)
 //        Toast.makeText(applicationContext, "Rel" + pos, Toast.LENGTH_LONG).show()
         if (pos == 0) {
@@ -191,38 +195,15 @@ class ViewPagerDashboard : AppCompatActivity() {
         //set back button
         actionbar.setDisplayHomeAsUpEnabled(true)
 
-        btnPrevious = findViewById(R.id.btnPrevious)
-        btnNext = findViewById(R.id.btnNext)
-        lyButtonsBg = findViewById(R.id.lyButtonsBg)
-
-        if (imagesList.size > 1) {
-            btnPrevious.visibility = View.VISIBLE
-            btnNext.visibility = View.VISIBLE
-            lyButtonsBg.visibility = View.VISIBLE
-        } else {
-            lyButtonsBg.visibility = View.GONE
-            btnPrevious.visibility = View.GONE
-            btnNext.visibility = View.GONE
-        }
         val adapter = ViewPagerAdapter(imagesList)
-        viewPager2 = findViewById(R.id.viewPager)
+        viewPager2 = findViewById(R.id.viewPagerdetails)
 //        viewPager2.setCurrentItem(0)
         viewPager2.adapter = adapter
 
-        btnPrevious.setOnClickListener {
-            val currPos: Int = viewPager2.currentItem
-//            if (currPos != 0) {
-            viewPager2.currentItem = currPos - 1
-//            }
-        }
+    }
 
-        btnNext.setOnClickListener {
-            val currPos: Int = viewPager2.currentItem
-//            if (currPos != 0) {
-            viewPager2.currentItem = currPos + 1
-//                viewPager2.setCurrentItem(viewPager2.currentItem)
-//            }
-        }
+    override fun onResume() {
+        super.onResume()
 
     }
 
