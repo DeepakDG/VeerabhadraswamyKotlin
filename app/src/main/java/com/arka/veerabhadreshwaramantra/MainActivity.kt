@@ -9,8 +9,6 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.preference.PreferenceFragmentCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.arka.veerabhadreshwaramantra.databinding.ActivityMainBinding
@@ -102,12 +100,22 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.fab.setOnClickListener { view ->
-            val mIntent = Intent(applicationContext, HomePage::class.java)
-            mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-            startActivity(mIntent)
+        binding.bottomNavigationView.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.home->setCurrentFragment(1)
+                R.id.audio->setCurrentFragment(2)
+                R.id.pic->setCurrentFragment(3)
+                R.id.settings->setCurrentFragment(4)
+
+            }
+            true
         }
+//        binding.fab.setOnClickListener { view ->
+//            val mIntent = Intent(applicationContext, HomePage::class.java)
+//            mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+//            mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+//            startActivity(mIntent)
+//        }
 
         // getting the recyclerview by its id
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
@@ -132,6 +140,22 @@ class MainActivity : AppCompatActivity() {
         //firebase working
         recyclerview.scheduleLayoutAnimation()
         parentLayout = findViewById(android.R.id.content)
+    }
+
+    private fun setCurrentFragment(num: Any) {
+        var mIntent = Intent(applicationContext, HomePage::class.java)
+        if(num == 1){
+            mIntent = Intent(applicationContext, MainActivity::class.java)
+        }else if (num == 2){
+            mIntent = Intent(applicationContext, HomePage::class.java)
+        }else if(num == 3){
+            mIntent = Intent(applicationContext, HomePage::class.java)
+        }else{
+            mIntent = Intent(applicationContext, SettingScreenActivity::class.java)
+        }
+            mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(mIntent)
     }
 
     private fun checkIfFirstRun() {
@@ -227,7 +251,6 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> newAboutCall()
             R.id.shareApp -> newShareAppCall()
             R.id.rateUs -> newRateUsCall()
-            R.id.themeMenu -> newthemeScreen()
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -257,15 +280,6 @@ class MainActivity : AppCompatActivity() {
         }
         return true
     }
-
-    private fun newthemeScreen() : Boolean{
-        val mIntent = Intent(applicationContext, SettingScreenActivity::class.java)
-        mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-        mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-        startActivity(mIntent)
-        return true
-    }
-
 
     private fun newRateUsCall(): Boolean {
         val manager = ReviewManagerFactory.create(applicationContext)
