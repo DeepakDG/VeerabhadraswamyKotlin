@@ -101,11 +101,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.bottomNavigationView.setOnNavigationItemSelectedListener {
-            when(it.itemId){
-                R.id.home->setCurrentFragment(1)
-                R.id.audio->setCurrentFragment(2)
-                R.id.pic->setCurrentFragment(3)
-                R.id.settings->setCurrentFragment(4)
+            when (it.itemId) {
+                R.id.home -> setCurrentFragment(1)
+                R.id.audio -> setCurrentFragment(2)
+                R.id.pic -> setCurrentFragment(3)
+                R.id.settings -> setCurrentFragment(4)
 
             }
             true
@@ -144,18 +144,18 @@ class MainActivity : AppCompatActivity() {
 
     private fun setCurrentFragment(num: Any) {
         var mIntent = Intent(applicationContext, HomePage::class.java)
-        if(num == 1){
+        if (num == 1) {
             mIntent = Intent(applicationContext, MainActivity::class.java)
-        }else if (num == 2){
+        } else if (num == 2) {
             mIntent = Intent(applicationContext, HomePage::class.java)
-        }else if(num == 3){
+        } else if (num == 3) {
             mIntent = Intent(applicationContext, HomePage::class.java)
-        }else{
+        } else {
             mIntent = Intent(applicationContext, SettingScreenActivity::class.java)
         }
-            mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-            startActivity(mIntent)
+        mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(mIntent)
     }
 
     private fun checkIfFirstRun() {

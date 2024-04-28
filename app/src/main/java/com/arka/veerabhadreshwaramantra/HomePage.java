@@ -15,7 +15,6 @@ import androidx.viewpager.widget.ViewPager;
 import java.util.ArrayList;
 
 public class HomePage extends AppCompatActivity {
-
     public final static int LOOPS = 1000;
     public CarouselPagerAdapter adapter;
     public ViewPager pager;

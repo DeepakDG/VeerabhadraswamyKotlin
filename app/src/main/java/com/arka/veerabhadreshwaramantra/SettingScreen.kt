@@ -18,7 +18,6 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 class SettingsScreen : PreferenceFragment() {
-
     private lateinit var colorPickerDialog: AlertDialog
     private lateinit var content: ConstraintLayout
     private var tinyDB: TinyDB? = null
@@ -30,7 +29,7 @@ class SettingsScreen : PreferenceFragment() {
         addPreferencesFromResource(R.xml.preference)
 
         tinyDB = TinyDB(activity)
-        val vibrateSwitch : android.preference.Preference  =
+        val vibrateSwitch: android.preference.Preference =
             findPreference(getString(R.string.prefs_restricted_mode))
 
         if (vibrateSwitch != null) {
@@ -45,11 +44,22 @@ class SettingsScreen : PreferenceFragment() {
     }
 
     private fun showColorPickerDialog() {
-
         val colors = listOf(
-            Color.CYAN, Color.rgb(179, 157, 219), Color.MAGENTA, Color.rgb(245, 245, 220), Color.YELLOW,
-            Color.rgb(169, 169, 169), Color.GREEN, Color.rgb(244, 164, 96), Color.BLUE, Color.RED,
-            Color.rgb(255, 228, 181), Color.rgb(72, 61, 139), Color.rgb(205, 92, 92), Color.rgb(255, 165, 0), Color.rgb(102, 205, 170)
+            Color.CYAN,
+            Color.rgb(179, 157, 219),
+            Color.MAGENTA,
+            Color.rgb(245, 245, 220),
+            Color.YELLOW,
+            Color.rgb(169, 169, 169),
+            Color.GREEN,
+            Color.rgb(244, 164, 96),
+            Color.BLUE,
+            Color.RED,
+            Color.rgb(255, 228, 181),
+            Color.rgb(72, 61, 139),
+            Color.rgb(205, 92, 92),
+            Color.rgb(255, 165, 0),
+            Color.rgb(102, 205, 170)
         )
 
         val numColumns = 5 // Desired number of columns
@@ -85,5 +95,4 @@ class SettingsScreen : PreferenceFragment() {
     private fun dpToPx(dp: Int): Int {
         return (dp * resources.displayMetrics.density).toInt()
     }
-
-    }
+}
