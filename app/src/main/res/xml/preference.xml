@@ -2,14 +2,14 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory android:title="General">
+    <PreferenceCategory android:title="@string/app_setting">
         <ListPreference
             android:dialogTitle="Select duration"
             android:entries="@array/settings_list_preference_titles"
             android:entryValues="@array/settings_list_preference_values"
             android:key="@string/key_list_preference"
-            android:summary="Click to show a list to choose from"
-            android:title="List Preference" />
+            android:summary="@string/text_size_summary"
+            android:title="@string/text_size_tittle" />
 
         <SwitchPreference
             android:defaultValue="false"
@@ -19,13 +19,6 @@
 
         <Preference
             android:key="@string/color_button"
-            android:summary="your app theme will be selected"
-            android:title="select theme" />
-
-        <!--below switch preferences is use to restrict mode-->
-        <SwitchPreference
-            android:defaultValue="true"
-            android:key="@string/prefs_color_theme"
             android:summary="@string/select_theme_summary"
             android:title="@string/select_theme_title" />
 

@@ -4292,6 +4292,7 @@ II ಓಂ ಶಾಂತಿಃ ಶಾಂತಿಃ ||
     <string name="about_head">ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಪ್ರಚಾರ ಸಮಿತಿ, ಕರ್ನಾಟಕ</string>
     <string name="contact_head">ಸಂಪರ್ಕಿಸಿ :</string>
     <string name="action_settings">ಅಪ್ಲಿಕೇಶನ್ ಬಗ್ಗೆ</string>
+    <string name="app_setting">ಅಪ್ಲಿಕೇಶನ್ ಸೆಟ್ಟಿಂಗ್</string>
     <string name="shareApp">ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
     <string name="rateUs">ಅಪ್ಲಿಕೇಶನ್ ರೇಟ್ ಮಾಡಿ</string>
     <string name="themeMenu">ಥೀಮ್</string>
@@ -4309,6 +4310,8 @@ II ಓಂ ಶಾಂತಿಃ ಶಾಂತಿಃ ||
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="do_mail">ಇಮೇಲ್ ಮಾಡಿ</string>
+    <string name="text_size_tittle">ಅಪ್ಲಿಕೇಶನ್ ಪಠ್ಯ ಗಾತ್ರ ಆಯ್ಕೆ</string>
+    <string name="text_size_summary">ಪಠ್ಯದ ಗಾತ್ರವನ್ನು ಹೆಚ್ಚಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
 
     <string name="choose_text_size">ಪಠ್ಯ ಗಾತ್ರ</string>
     <string name="key_list_preference">prefs_key_text_size</string>
@@ -4317,17 +4320,9 @@ II ಓಂ ಶಾಂತಿಃ ಶಾಂತಿಃ ||
     <string name="app_text_bold">prefs_app_text_bold</string>
     <string name="make_text_bold">ಅಪ್ಲಿಕೇಶನ್ ಅಕ್ಷರಗಳನ್ನು ದಪ್ಪವಾಗಿಸಿ</string>
     <string name="color_button">keybuttoncolor</string>
-    <string name="select_theme_summary">Pick color</string>
-    <string name="select_theme_title">select theme</string>
+    <string name="select_theme_summary">ಹಿನ್ನೆಲೆ ಬಣ್ಣವನ್ನು ಆರಿಸಿ</string>
+    <string name="select_theme_title">ಥೀಮ್ ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="prefs_color_theme">prefs_color_theme</string>
-
-    <string-array name="list_text_sizes">
-        <item>5f</item>
-        <item>10f</item>
-        <item>15f</item>
-        <item>20f</item>
-        <item>25f</item>
-    </string-array>
 
     <string-array name="settings_list_preference_titles">
         <item>15 ಗಾತ್ರ</item>

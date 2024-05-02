@@ -8,7 +8,6 @@ import android.preference.PreferenceFragment
 import android.preference.PreferenceManager
 import android.util.Log
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.GridLayoutManager
@@ -25,30 +24,25 @@ class SettingsScreen : PreferenceFragment() {
 
         tinyDB = TinyDB(activity)
 
+        bindPreferenceSummaryToValue(findPreference(getString(R.string.key_list_preference)))
+
         val prefTextBold =
             findPreference(getString(R.string.app_text_bold))
 
-        val vibrateSwitch =
-            findPreference(getString(R.string.prefs_color_theme))
-        bindPreferenceSummaryToValue(findPreference(getString(R.string.key_list_preference)))
+        val prefColorButton = findPreference(getString(R.string.color_button))
 
-        if (prefTextBold != null) {
-            prefTextBold.setOnPreferenceChangeListener { arg0, isVibrateOnObject ->
-                val isTextBold = isVibrateOnObject as Boolean
-                if (isTextBold) {
-                    tinyDB!!.putBoolean("SelectedTextBold", isTextBold)
-                    Log.d("SelectedTextBold ", isTextBold.toString());
-                }
+        if (prefColorButton != null) {
+            prefColorButton.setOnPreferenceClickListener { preference ->
+                showColorPickerDialog()
                 true
             }
         }
 
-        if (vibrateSwitch != null) {
-            vibrateSwitch.setOnPreferenceChangeListener { arg0, isVibrateOnObject ->
-                val isVibrateOn = isVibrateOnObject as Boolean
-                if (isVibrateOn) {
-                    showColorPickerDialog()
-                }
+        if (prefTextBold != null) {
+            prefTextBold.setOnPreferenceChangeListener { arg0, isVibrateOnObject ->
+                val isTextBold = isVibrateOnObject as Boolean
+                tinyDB!!.putBoolean("selectedTextBold", isTextBold)
+                Log.d("SelectedTextBold ", isTextBold.toString());
                 true
             }
         }

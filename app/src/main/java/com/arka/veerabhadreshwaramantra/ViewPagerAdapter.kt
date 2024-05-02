@@ -24,7 +24,7 @@ class ViewPagerAdapter(
         tinyDB = TinyDB(parent.context)
         context = parent.context
         selectedTextSize = tinyDB!!.getString("selectedTextSize")
-        selectedTextFontFace = tinyDB!!.getBoolean("SelectedTextBold")
+        selectedTextFontFace = tinyDB!!.getBoolean("selectedTextBold")
         Log.d("SelectedTextBold ", selectedTextFontFace.toString());
         Log.d("selectedTextSize ", selectedTextSize.toString());
         val view =
@@ -34,7 +34,7 @@ class ViewPagerAdapter(
 
     override fun onBindViewHolder(holder: ViewPagerHolder, position: Int) {
         val image = imagesList[position]
-        holder.bind(image, selectedTextSize, true, context)
+        holder.bind(image, selectedTextSize, selectedTextFontFace, context)
     }
 
     override fun getItemCount(): Int {
