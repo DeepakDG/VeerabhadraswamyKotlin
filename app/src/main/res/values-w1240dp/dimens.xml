@@ -1,3 +1,10 @@
 <resources>
-      <dimen name="fab_margin">200dp</dimen>
-   </resources>
+    <dimen name="fab_margin">200dp</dimen>
+    <dimen name="text_15">15f</dimen>
+    <dimen name="text_18">18f</dimen>
+    <dimen name="text_24">24f</dimen>
+    <dimen name="text_28">28f</dimen>
+    <dimen name="text_30">30f</dimen>
+    <dimen name="text_32">32f</dimen>
+    <dimen name="text_35">35f</dimen>
+</resources>

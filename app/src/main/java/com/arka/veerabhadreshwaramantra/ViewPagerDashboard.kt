@@ -20,17 +20,17 @@ class ViewPagerDashboard : AppCompatActivity() {
     private lateinit var heading: String
     private var tinyDB: TinyDB? = null
     private lateinit var activity_main:ConstraintLayout
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.contentdetails)
         tinyDB = TinyDB(applicationContext)
+
         val themeColor = tinyDB!!.getInt("SelectedColor");
         Log.d("themeColor ", themeColor.toString());
         activity_main = findViewById<ConstraintLayout>(R.id.dashboard_details_content)
         activity_main.setBackgroundColor(themeColor)
+
         val pos = intent.getIntExtra("Position", 0)
-//        Toast.makeText(applicationContext, "Rel" + pos, Toast.LENGTH_LONG).show()
         if (pos == 0) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಸುಪ್ರಭಾತ"
             imagesList = listOf(
@@ -197,14 +197,11 @@ class ViewPagerDashboard : AppCompatActivity() {
 
         val adapter = ViewPagerAdapter(imagesList)
         viewPager2 = findViewById(R.id.viewPagerdetails)
-//        viewPager2.setCurrentItem(0)
         viewPager2.adapter = adapter
-
     }
 
     override fun onResume() {
         super.onResume()
-
     }
 
     private fun getTermsString(): String {

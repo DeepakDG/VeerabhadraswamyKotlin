@@ -106,20 +106,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.audio -> setCurrentFragment(2)
                 R.id.pic -> setCurrentFragment(3)
                 R.id.settings -> setCurrentFragment(4)
-
             }
             true
         }
-//        binding.fab.setOnClickListener { view ->
-//            val mIntent = Intent(applicationContext, HomePage::class.java)
-//            mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-//            mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-//            startActivity(mIntent)
-//        }
 
         // getting the recyclerview by its id
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
-
         // this creates a vertical layout Manager
         recyclerview.layoutManager = LinearLayoutManager(this)
 
@@ -143,7 +135,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setCurrentFragment(num: Any) {
-        var mIntent = Intent(applicationContext, HomePage::class.java)
+        var mIntent: Intent
         if (num == 1) {
             mIntent = Intent(applicationContext, MainActivity::class.java)
         } else if (num == 2) {
@@ -168,8 +160,6 @@ class MainActivity : AppCompatActivity() {
             OnSuccessListener<AuthResult?> { checkIfFirstRun() })
         auth.signInAnonymously().addOnFailureListener(this@MainActivity,
             OnFailureListener { exception ->
-//                Toast.makeText(this@MainActivity, "signInAnonymously:FAILURE", Toast.LENGTH_LONG)
-//                    .show()
                 Log.e("Deepak", "signInAnonymously:FAILURE", exception)
                 retrySnackBar()
             })

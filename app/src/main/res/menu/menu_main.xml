@@ -14,8 +14,4 @@
         android:title="@string/rateUs"
         android:orderInCategory="100"
         app:showAsAction="never" />
-    <item android:id="@+id/themeMenu"
-        android:title="@string/themeMenu"
-        android:orderInCategory="100"
-        app:showAsAction="never" />
 </menu>

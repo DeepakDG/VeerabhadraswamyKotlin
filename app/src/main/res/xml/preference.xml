@@ -2,76 +2,32 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!--below line is to create preference category-->
     <PreferenceCategory android:title="General">
-
-        <!--in below line we are creating a list preference
-            and we are adding default selected value in list for 3 rd index-->
-        <!--dialog title is to set title for our dialog box
-            entries is used to add list of data which we
-            are adding from our strings file
-            entry values is to add values to our entries.
-            key is use to add key to our list preferences
-            summary is use to add description to our option
-            title is use to add title to our list preferences.-->
-        <!--this list preference is for remind me option-->
         <ListPreference
-            android:defaultValue="3"
-            android:dialogTitle="@string/choose_text_size"
-            android:entries="@array/list_text_sizes"
-            android:entryValues="@array/pref_text_size"
-            android:key="@string/key_text_size"
-            android:summary="@string/choose_text_size_desc"
-            android:title="@string/choose_text_size" />
+            android:dialogTitle="Select duration"
+            android:entries="@array/settings_list_preference_titles"
+            android:entryValues="@array/settings_list_preference_values"
+            android:key="@string/key_list_preference"
+            android:summary="Click to show a list to choose from"
+            android:title="List Preference" />
 
-        <!--below switch preference is
-            use for mobile data usage-->
         <SwitchPreference
             android:defaultValue="false"
-            android:key="@string/limit_data_usage"
+            android:key="@string/app_text_bold"
             android:summary="@string/make_text_bold"
-            android:title="@string/limit_mobile_usage" />
-
-        <!--below list preference is use for
-            double tap to seek option-->
-        <ListPreference
-            android:defaultValue="1"
-            android:dialogTitle="@string/double_tap_to_seek"
-            android:entries="@array/pref_seek_values"
-            android:entryValues="@array/pref_text_size"
-            android:key="@string/pref_seek_val"
-            android:summary="@string/seconds"
-            android:title="@string/double_tap_to_seek" />
+            android:title="@string/make_text_bold" />
 
         <Preference
-            android:title="select theme"
             android:key="@string/color_button"
             android:summary="your app theme will be selected"
-            />
-
-        <!--below option is use to create a list
-            preference for Upload preferences-->
-        <ListPreference
-            android:defaultValue="1"
-            android:dialogTitle="@string/uploads"
-            android:entries="@array/pref_uploads"
-            android:entryValues="@array/pref_text_size"
-            android:key="@string/pref_uploads"
-            android:summary="@string/specify_network_prefs"
-            android:title="Uploads" />
+            android:title="select theme" />
 
         <!--below switch preferences is use to restrict mode-->
         <SwitchPreference
             android:defaultValue="true"
-            android:key="@string/prefs_restricted_mode"
+            android:key="@string/prefs_color_theme"
             android:summary="@string/select_theme_summary"
             android:title="@string/select_theme_title" />
-
-        <!--below switch pref is use for enable stats option-->
-        <SwitchPreference
-            android:defaultValue="false"
-            android:key="@string/prefs_enable_stats"
-            android:title="@string/enable_stats" />
 
     </PreferenceCategory>
 

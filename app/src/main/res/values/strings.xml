@@ -2005,7 +2005,7 @@ ll ಬೆಲಗೂರು ಶ್ರೀ ಬಿಂದುಮಾಧವ ಶರ್ಮ �
 ಶ್ರೀ ವೀರೇಂದ್ರ ಕರುಣಿಪುದೆಮಗೆ ಮಹಾ ಬೆಳಗಂ ll ೨೦ ll\n\n
 
     </string>
-<string name="shathaka2">\n
+    <string name="shathaka2">\n
 ನಡುಗಣ್ಣೊಳುದ್ಭವಿಸಿದ ಭದ್ರನ ಭಾರಕ್ಕೆ
 ಇಳೆಬಿರಿದಿತು ಬ್ರಹ್ಮಾಂಡವು ತತ್ತರಿಸಿತು
 ಹೀಗೆ ಶಿವನಿಗೇ ಬೆರಗನ್ನುಂಟುಮಾಡಿದ
@@ -4311,60 +4311,41 @@ II ಓಂ ಶಾಂತಿಃ ಶಾಂತಿಃ ||
     <string name="do_mail">ಇಮೇಲ್ ಮಾಡಿ</string>
 
     <string name="choose_text_size">ಪಠ್ಯ ಗಾತ್ರ</string>
-    <string name="key_text_size">key_text_size</string>
+    <string name="key_list_preference">prefs_key_text_size</string>
+    <string name="title_list_preference">tittle_key_text_size</string>
     <string name="choose_text_size_desc">ಅಪ್ಲಿಕೇಶನ್‌ಗಾಗಿ ಪಠ್ಯ ಗಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
-    <string name="remind_for_bed_time">Remind me for bed time</string>
-    <string name="limit_data_usage">prefs_limit_data_usage</string>
+    <string name="app_text_bold">prefs_app_text_bold</string>
     <string name="make_text_bold">ಅಪ್ಲಿಕೇಶನ್ ಅಕ್ಷರಗಳನ್ನು ದಪ್ಪವಾಗಿಸಿ</string>
-    <string name="limit_mobile_usage">Limit mobile data usage</string>
-    <string name="double_tap_to_seek">Double-tap to seek</string>
     <string name="color_button">keybuttoncolor</string>
-    <string name="pref_seek_val">pref_seek_val</string>
-    <string name="seconds">seconds</string>
-    <string name="uploads">Uploads</string>
-    <string name="pref_uploads">pref_uploads</string>
-    <string name="specify_network_prefs">Specify network preferences for uploads</string>
-    <string name="prefs_restricted_mode">prefs_restricted_mode</string>
     <string name="select_theme_summary">Pick color</string>
     <string name="select_theme_title">select theme</string>
-    <string name="prefs_enable_stats">prefs_enable_stats</string>
-    <string name="enable_stats">Enable stats for nerds</string>
-
-    <string-array name="pref_upload_quality_entries">
-        <item>360p</item>
-        <item>480p</item>
-        <item>720p</item>
-        <item>1080p</item>
-        <item>Original</item>
-    </string-array>
+    <string name="prefs_color_theme">prefs_color_theme</string>
 
     <string-array name="list_text_sizes">
-        <item>1 ಗಾತ್ರ</item>
-        <item>2 ಗಾತ್ರ</item>
-        <item>3 ಗಾತ್ರ</item>
-        <item>5 ಗಾತ್ರ</item>
-        <item>10 ಗಾತ್ರ</item>
+        <item>5f</item>
+        <item>10f</item>
+        <item>15f</item>
+        <item>20f</item>
+        <item>25f</item>
     </string-array>
 
-    <string-array name="pref_seek_values">
-        <item>5</item>
-        <item>10</item>
+    <string-array name="settings_list_preference_titles">
+        <item>15 ಗಾತ್ರ</item>
+        <item>18 ಗಾತ್ರ</item>
+        <item>24 ಗಾತ್ರ</item>
+        <item>28 ಗಾತ್ರ</item>
+        <item>30 ಗಾತ್ರ</item>
+        <item>32 ಗಾತ್ರ</item>
+        <item>35 ಗಾತ್ರ</item>
+    </string-array>
+    <string-array name="settings_list_preference_values">
         <item>15</item>
-        <item>20</item>
+        <item>18</item>
+        <item>24</item>
+        <item>28</item>
         <item>30</item>
-    </string-array>
-
-    <string-array name="pref_text_size">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-
-    <string-array name="pref_uploads">
-        <item>Only when on Wi-Fi</item>
-        <item>On any network</item>
+        <item>32</item>
+        <item>35</item>
     </string-array>
 
 </resources>

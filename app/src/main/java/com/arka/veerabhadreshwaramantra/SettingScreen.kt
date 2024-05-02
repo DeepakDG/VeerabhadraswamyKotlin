@@ -1,21 +1,18 @@
 package com.arka.veerabhadreshwaramantra
 
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.os.Vibrator
+import android.preference.ListPreference
+import android.preference.Preference
 import android.preference.PreferenceFragment
+import android.preference.PreferenceManager
 import android.util.Log
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.preference.Preference
-import androidx.preference.SwitchPreference
-import androidx.core.graphics.ColorUtils
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
 
 class SettingsScreen : PreferenceFragment() {
     private lateinit var colorPickerDialog: AlertDialog
@@ -24,13 +21,27 @@ class SettingsScreen : PreferenceFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // below line is used to add preference
-        // fragment from our xml folder.
         addPreferencesFromResource(R.xml.preference)
 
         tinyDB = TinyDB(activity)
-        val vibrateSwitch: android.preference.Preference =
-            findPreference(getString(R.string.prefs_restricted_mode))
+
+        val prefTextBold =
+            findPreference(getString(R.string.app_text_bold))
+
+        val vibrateSwitch =
+            findPreference(getString(R.string.prefs_color_theme))
+        bindPreferenceSummaryToValue(findPreference(getString(R.string.key_list_preference)))
+
+        if (prefTextBold != null) {
+            prefTextBold.setOnPreferenceChangeListener { arg0, isVibrateOnObject ->
+                val isTextBold = isVibrateOnObject as Boolean
+                if (isTextBold) {
+                    tinyDB!!.putBoolean("SelectedTextBold", isTextBold)
+                    Log.d("SelectedTextBold ", isTextBold.toString());
+                }
+                true
+            }
+        }
 
         if (vibrateSwitch != null) {
             vibrateSwitch.setOnPreferenceChangeListener { arg0, isVibrateOnObject ->
@@ -41,6 +52,33 @@ class SettingsScreen : PreferenceFragment() {
                 true
             }
         }
+    }
+
+    private val sBindPreferenceSummaryToValueListener =
+        Preference.OnPreferenceChangeListener { preference, value ->
+            val stringValue = value.toString()
+            tinyDB!!.putString("selectedTextSize", stringValue)
+            if (preference is ListPreference) {
+                val listPreference = preference
+                val index = listPreference.findIndexOfValue(stringValue)
+                preference.setSummary(
+                    if (index >= 0)
+                        listPreference.entries[index]
+                    else
+                        null
+                )
+            }
+            true
+        }
+
+    private fun bindPreferenceSummaryToValue(preference: Preference) {
+        preference.onPreferenceChangeListener = sBindPreferenceSummaryToValueListener
+        sBindPreferenceSummaryToValueListener.onPreferenceChange(
+            preference,
+            PreferenceManager
+                .getDefaultSharedPreferences(preference.context)
+                .getString(preference.key, "")
+        )
     }
 
     private fun showColorPickerDialog() {
