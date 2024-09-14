@@ -15,7 +15,6 @@ import com.arka.veerabhadreshwaramantra.databinding.ActivityMainBinding
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.material.snackbar.Snackbar
-import com.google.android.play.core.review.ReviewManagerFactory
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.BuildConfig
@@ -261,7 +260,7 @@ class MainActivity : AppCompatActivity() {
             var shareMessage = "\nನಾನು ನಿಮಗೆ ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಶಿಫಾರಸು ಮಾಡುತ್ತೇನೆ\n\n"
             shareMessage =
                 """
-               ${shareMessage}https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}
+               ${shareMessage}https://play.google.com/store/apps/details?id=${BuildConfig.VERSION_NAME}
                """.trimIndent()
             shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
             startActivity(Intent.createChooser(shareIntent, "choose one"))
@@ -272,26 +271,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun newRateUsCall(): Boolean {
-        val manager = ReviewManagerFactory.create(applicationContext)
-        val request = manager.requestReviewFlow()
-        request.addOnCompleteListener { request ->
-            if (request.isSuccessful) {
-                // We got the ReviewInfo object
-                val reviewInfo = request.result
-                val flow = manager.launchReviewFlow(this, reviewInfo)
-                flow.addOnCompleteListener { _ ->
-                    // The flow has finished. The API does not indicate whether the user
-                    // reviewed or not, or even whether the review dialog was shown. Thus, no
-                    // matter the result, we continue our app flow.
-                }
-            } else {
-                // There was some problem, continue regardless of the result.
-            }
-        }
+//        val manager = ReviewManagerFactory.create(applicationContext)
+//        val request = manager.requestReviewFlow()
+//        request.addOnCompleteListener { request ->
+//            if (request.isSuccessful) {
+//                // We got the ReviewInfo object
+//                val reviewInfo = request.result
+//                val flow = manager.launchReviewFlow(this, reviewInfo)
+//                flow.addOnCompleteListener { _ ->
+//                    // The flow has finished. The API does not indicate whether the user
+//                    // reviewed or not, or even whether the review dialog was shown. Thus, no
+//                    // matter the result, we continue our app flow.
+//                }
+//            } else {
+//                // There was some problem, continue regardless of the result.
+//            }
+//        }
         return true
     }
 
     override fun onBackPressed() {
+        super.onBackPressed()
         val builder = AlertDialog.Builder(this@MainActivity)
         builder.setTitle("ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ಗಮಿಸಿ")
             .setMessage("ಮುಖ್ಯ ಮುಖಪುಟ ಪರದೆಗೆ ಹೋಗುವುದನ್ನು ಖಚಿತಪಡಿಸಿ ?")

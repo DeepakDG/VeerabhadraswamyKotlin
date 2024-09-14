@@ -4296,7 +4296,7 @@ II ಓಂ ಶಾಂತಿಃ ಶಾಂತಿಃ ||
     <string name="shareApp">ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
     <string name="rateUs">ಅಪ್ಲಿಕೇಶನ್ ರೇಟ್ ಮಾಡಿ</string>
     <string name="themeMenu">ಥೀಮ್</string>
-    <string name="app_version">ಅಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿ : 1.0.0</string>
+    <string name="app_version">ಅಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿ : 1.2.0</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
