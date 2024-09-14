@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> setCurrentFragment(1)
-                R.id.audio -> setCurrentFragment(2)
+//                R.id.audio -> setCurrentFragment(2)
                 R.id.pic -> setCurrentFragment(3)
                 R.id.settings -> setCurrentFragment(4)
             }
@@ -239,7 +239,7 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.action_settings -> newAboutCall()
             R.id.shareApp -> newShareAppCall()
-            R.id.rateUs -> newRateUsCall()
+//            R.id.rateUs -> newRateUsCall()
             else -> super.onOptionsItemSelected(item)
         }
     }

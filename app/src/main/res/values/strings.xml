@@ -4294,7 +4294,7 @@ II ಓಂ ಶಾಂತಿಃ ಶಾಂತಿಃ ||
     <string name="action_settings">ಅಪ್ಲಿಕೇಶನ್ ಬಗ್ಗೆ</string>
     <string name="app_setting">ಅಪ್ಲಿಕೇಶನ್ ಸೆಟ್ಟಿಂಗ್</string>
     <string name="shareApp">ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
-    <string name="rateUs">ಅಪ್ಲಿಕೇಶನ್ ರೇಟ್ ಮಾಡಿ</string>
+<!--    <string name="rateUs">ಅಪ್ಲಿಕೇಶನ್ ರೇಟ್ ಮಾಡಿ</string>-->
     <string name="themeMenu">ಥೀಮ್</string>
     <string name="app_version">ಅಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿ : 1.2.0</string>
     <!-- Strings used for fragments for navigation -->

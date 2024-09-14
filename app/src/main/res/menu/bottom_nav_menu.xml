@@ -3,11 +3,11 @@
     <item
         android:id="@+id/home"
         android:title="Home"
-        android:icon="@android:drawable/ic_menu_myplaces"/>
-    <item
-        android:id="@+id/audio"
-        android:title="Audio"
-        android:icon="@android:drawable/ic_btn_speak_now"/>
+        android:icon="@android:drawable/ic_menu_add"/>
+<!--    <item-->
+<!--        android:id="@+id/audio"-->
+<!--        android:title="Audio"-->
+<!--        android:icon="@android:drawable/ic_btn_speak_now"/>-->
     <item
         android:id="@+id/pic"
         android:title="Pics"
@@ -15,5 +15,5 @@
     <item
         android:id="@+id/settings"
         android:title="Settings"
-        android:icon="@android:drawable/ic_menu_view"/>
+        android:icon="@android:drawable/ic_menu_edit"/>
 </menu>
