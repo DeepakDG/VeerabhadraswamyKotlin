@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home"
-        android:title="Home"
+        android:title="@string/bottom_home"
         android:icon="@android:drawable/ic_menu_add"/>
 <!--    <item-->
 <!--        android:id="@+id/audio"-->
@@ -10,10 +10,10 @@
 <!--        android:icon="@android:drawable/ic_btn_speak_now"/>-->
     <item
         android:id="@+id/pic"
-        android:title="Pics"
+        android:title="@string/bottom_pics"
         android:icon="@android:drawable/ic_menu_gallery"/>
     <item
         android:id="@+id/settings"
-        android:title="Settings"
+        android:title="@string/bottom_setting"
         android:icon="@android:drawable/ic_menu_edit"/>
 </menu>

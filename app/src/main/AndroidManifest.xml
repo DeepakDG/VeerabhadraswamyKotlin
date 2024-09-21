@@ -21,10 +21,6 @@
         android:theme="@style/Theme.Veerabhadreshwaramantra"
         tools:targetApi="34" >
 
-<!--        <meta-data-->
-<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
-<!--            android:value="ca-app-pub-2719647944299073~7912683496" />-->
-
         <activity
             android:name=".SplashActivity"
             android:exported="true"

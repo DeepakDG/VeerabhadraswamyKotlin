@@ -4323,6 +4323,9 @@ II ಓಂ ಶಾಂತಿಃ ಶಾಂತಿಃ ||
     <string name="select_theme_summary">ಹಿನ್ನೆಲೆ ಬಣ್ಣವನ್ನು ಆರಿಸಿ</string>
     <string name="select_theme_title">ಥೀಮ್ ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="prefs_color_theme">prefs_color_theme</string>
+    <string name="bottom_home">ಹೋಂ</string>
+    <string name="bottom_pics">ವಾಲ್ಪೇಪರ್</string>
+    <string name="bottom_setting">ಸೆಟ್ಟಿಂಗ್</string>
 
     <string-array name="settings_list_preference_titles">
         <item>15 ಗಾತ್ರ</item>
