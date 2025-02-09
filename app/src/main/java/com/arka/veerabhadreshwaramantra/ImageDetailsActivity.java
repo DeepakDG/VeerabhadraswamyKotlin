@@ -56,7 +56,7 @@ public class ImageDetailsActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         // Create the next level button, which tries to show an interstitial when clicked.
         // Create the text view to show the level number.
-        // Create the InterstitialAd and set the adUnitId (defined in values/strings.xml).
+        // Create the InterstitialAd and set the adUnitId (defined in values/Strings.xml).
         //Add AdMob StringId
         tinyDB = new TinyDB(getApplicationContext());
         imagePath = tinyDB.getListString("MyUsers");
@@ -153,6 +153,7 @@ public class ImageDetailsActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
         finish();
     }
 

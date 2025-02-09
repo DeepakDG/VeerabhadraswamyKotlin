@@ -50,7 +50,7 @@ public class HomePage extends AppCompatActivity {
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
         int pageMargin = ((metrics.widthPixels / 4) * 2);
         pager.setPageMargin(-pageMargin);
-//        Log.d("Deepak imagetostring ",imagePathList.toString());
+//        Log.d("Deepak imagetoString ",imagePathList.toString());
         adapter = new CarouselPagerAdapter(HomePage.this, getSupportFragmentManager());
         pager.setAdapter(adapter);
         adapter.notifyDataSetChanged();
@@ -76,6 +76,7 @@ public class HomePage extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
         Log.d("CDA", "onBackPressed Called");
         Intent setIntent = new Intent(HomePage.this, MainActivity.class);
         setIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);

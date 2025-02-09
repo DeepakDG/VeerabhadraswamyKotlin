@@ -29,6 +29,7 @@ class SettingScreenActivity : AppCompatActivity() {
         }
 
         override fun onBackPressed() {
+            super.onBackPressed()
             val mIntent = Intent(applicationContext, MainActivity::class.java)
             mIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             mIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP

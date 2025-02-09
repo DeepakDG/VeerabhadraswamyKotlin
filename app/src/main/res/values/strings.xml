@@ -923,7 +923,7 @@
         ಸ ಭೂತ್ವಾಧರಾಯಾಂ ಸಮಗ್ರಂ ಚ ಭುಕ್ತ್ವಾವಿಪದ್ಭಯೋ ವಿಮುಕ್ತಃ ಸುಖೀ ಸ್ಯಾತ್ಸುರಃ ಸ್ಯಾತ್.
     </string>
 
-    <string name=" athma veereswars stotram">ಆತ್ಮಾವೀರೇಶ್ವರಸ್ತೋತ್ರಂ\n\n
+    <string name="athma_veereswars_stotram">ಆತ್ಮಾವೀರೇಶ್ವರಸ್ತೋತ್ರಂ\n\n
 
         ಧ್ಯಾನಂ –ವಿಭೂತಿ-ಭೂಷಿತಂ ಬಾಲಮಷ್ಟವರ್ಷಾಕೃತಿಂ ಶಿಶುಂ |ಆಕರ್ಣಪೂರ್ಣನೇತ್ರಂ ಚ ಸುರಕ್ತದಶನಚ್ಛದಂ || ೧ ||
 
@@ -994,7 +994,7 @@
         || ಇತಿ ಶ್ರೀಸ್ಕಂದಪುರಾಣೇ ಕಾಶೀಖಂಡೇ ಆತ್ಮಾವೀರೇಶ್ವರಸ್ತೋತ್ರಂ ಸಂಪೂರ್ಣಂ ||
     </string>
 
-    <string name=" Sri Veerabhadra sthotra">ಶ್ರೀವೀರಭದ್ರಸ್ವಾಮಿ ಸ್ತೋತ್ರ \n\n
+    <string name="Sri_Veerabhadra_sthotra">ಶ್ರೀವೀರಭದ್ರಸ್ವಾಮಿ ಸ್ತೋತ್ರ \n\n
 
         ರುದ್ರ ಜಟೊಧ್ಭವಾಯ ಚ ಸರ್ವಶಕ್ತಿ ಸ್ವರೂಪಿಣೇಭಯಾನಕಾಯ ಘೋರಾಯ ವೀರಭದ್ರಾಯ ತೇ ನಮಃ || ೧ ||
 
@@ -1048,7 +1048,7 @@
     </string>
 
 
-    <string name=" Sri Veerabhadra ashtottara shata namavali  sthotra ">ಶ್ರೀ ವೀರಭದ್ರ ಅಷ್ಟೋತ್ತರ
+    <string name="Sri_Veerabhadra_ashtottara_shata_namavali_sthotra">ಶ್ರೀ ವೀರಭದ್ರ ಅಷ್ಟೋತ್ತರ
         ಶತನಾಮಾವಳಿ ಸ್ತೋತ್ರ \n\n
 
         ವೀರಭದ್ರೋ ಮಹಾಶೂರೋ ರೌದ್ರೋ ರುದ್ರಾವತಾರಕಃಶ್ಯಾಮಾಂಗಶ್ಚ ಉಗ್ರದಂಷ್ಟ್ರಶ್ಚ ಭೀಮನತ್ರೋ ಜಿತೇಂದ್ರಿಯಃ || 1 ||
@@ -1100,7 +1100,7 @@
         || ಇತಿ ಶ್ರೀ ವೀರಭದ್ರಾಷ್ಟೋತ್ತರ ಸ್ತೋತ್ರಂ ಸಂಪೂರ್ಣಂ ||
     </string>
 
-    <string name=" Sri veerabhadra sahasranama sthotra ">ಶ್ರೀವೀರಭದ್ರ ಸಹಸ್ರನಾಮ ಸ್ತೋತ್ರಮ್\n\n
+    <string name="Sri_veerabhadra_sahasranama_sthotra">ಶ್ರೀವೀರಭದ್ರ ಸಹಸ್ರನಾಮ ಸ್ತೋತ್ರಮ್\n\n
 
         ಓಂ ಶ್ರೀಗಣೇಶಾಯ ನಮಃ ।ಶ್ರೀಉಮಾಮಹೇಶ್ವರಾಭ್ಯಾಂ ನಮಃ ।ಶ್ರೀವೀರಭದ್ರಾಯ ನಮಃ ।ಶ್ರೀಭದ್ರಕಾಲ್ಯೈ ನಮಃ ।
 
@@ -1487,7 +1487,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra nakshatra namavali ">ಶ್ರೀವೀರಭದ್ರ ನಕ್ಷತ್ರ ನಾಮಾವಲಿಃ\n\n
+    <string name="Sri_veerabhadra_nakshatra_namavali">ಶ್ರೀವೀರಭದ್ರ ನಕ್ಷತ್ರ ನಾಮಾವಲಿಃ\n\n
 
 
         ಧ್ಯಾನಮ್ ।ಓಂ ಗೋಕ್ಷೀರಾಭಂ ದಧಾನಂ ಪರಶುಡಮರುಕೌ ಖಡ್ಗಕೇಟೌ ಕಪಾಲಂಶೂಲಂ ಚಾಭೀತಿದಾನೇ ತ್ರಿನಯನಲಸಿತಂ
@@ -1504,8 +1504,7 @@
         || ಇತಿ ಶ್ರೀ ವೀರಭದ್ರ ನಕ್ಷತ್ರ ನಾಮಾವಳಿ ಸಂಪೂರ್ಣಮ್ ||
     </string>
 
-
-    <string name=" Sri veerabhadraastottara shata namavali ">ವೀರಭದ್ರಾಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ\n\n
+    <string name="Sri_veerabhadraastottara_shata_namavali">ವೀರಭದ್ರಾಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ\n\n
 
         ಓಂ ಶ್ರೀ ವೀರಭದ್ರಾಯ ನಮಃಓಂ ಮಹಾಶೂರಾಯ ನಮಃಓಂ ರೌದ್ರಾಯ ನಮಃಓಂ ರುದ್ರಾವತಾರಾಯ ನಮಃಓಂ ಶ್ಯಾಮಾಂಗಾಯ ನಮಃಓಂ
         ಉಗ್ರದಂಷ್ಟ್ರಾಯ ನಮಃಓಂ ಭೀಮನೇತ್ರಾಯ ನಮಃಓಂ ಜಿತೇಂದ್ರಿಯಾಯ ನಮಃಓಂ ಊರ್ಧ್ವಕೇಶಾಯ ನಮಃಓಂ ಭೂತನಾಥಾಯ ನಮಃ
@@ -1540,7 +1539,7 @@
         ll ಇತಿ ಶ್ರೀ ವೀರಭದ್ರಾಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳೀ ಸಂಪೂರ್ಣಂ ll
     </string>
 
-    <string name=" Sri veerabhadra sahasranamavali ">ಶ್ರೀವೀರಭದ್ರ ಸಹಸ್ರ ನಾಮಾವಲಿಃ \n\n
+    <string name="Sri_veerabhadra_sahasranamavali">ಶ್ರೀವೀರಭದ್ರ ಸಹಸ್ರ ನಾಮಾವಲಿಃ \n\n
 
         ಶ್ರೀಶಿವಾಯ ಗುರವೇಶ್ರೀವೀರಭದ್ರಸಹಸ್ರನಾಮಾದಿ ಕದಂಬಂಶ್ರೀವೀರಭದ್ರಸಹಸ್ರನಾಮಾವಲಿಃ .
 
@@ -1843,8 +1842,7 @@
         || ಇತಿ ಶ್ರೀವೀರಭದ್ರ ಸಹಸ್ರ ನಾಮಾವಲಿಃ ಸಮಾಪ್ತಾ ||
     </string>
 
-
-    <string name=" Sri veerabhadra malamaha manthra ">ಶ್ರೀವೀರಭದ್ರ ಮಾಲಾ ಮಹಾಮಂತ್ರಃ \n\n
+    <string name="Sri_veerabhadra_malamaha_manthra">ಶ್ರೀವೀರಭದ್ರ ಮಾಲಾ ಮಹಾಮಂತ್ರಃ \n\n
 
         ಶ್ರೀ ಅಘೋರ ವೀರಭದ್ರ ಪ್ರಲಯಕಾಲಹುಂಕಾರ ವೀರಭದ್ರಮಾಲಾಮಹಾಮಂತ್ರಃ .ಮಂತ್ರಃ -ಓಂ ವಿಂ ಓಂ ನಮೋ ಭಗವತೇ ಶ್ರೀ
         ಅಘೋರವೀರಭದ್ರಾಯ ತ್ರಿನೇತ್ರಮುಕುಟಾಯಚಂದ್ರಕಲಾಧರಾಯ ಜಟಾಜೂಟಮಣಿಕುಂಡಲಭೂಷಣಾಯ
@@ -1876,7 +1874,7 @@
         || ಇತಿ ಶ್ರೀವೀರಭದ್ರಮಾಲಾಮಹಾಮಂತ್ರಃ ಸಂಪೂರ್ಣಃ ||
     </string>
 
-    <string name=" Sri veerabhadra moola mantra ">ಶ್ರೀ ವೀರಭದ್ರ ಮೂಲಮಂತ್ರ\n\n
+    <string name="Sri_veerabhadra_moola_mantra">ಶ್ರೀ ವೀರಭದ್ರ ಮೂಲಮಂತ್ರ\n\n
 
 
         ಶ್ರೀ ವೀರಭದ್ರ ಮೂಲ ಮಂತ್ರವನ್ನು ಪಠಿಸುವುದು ಕಷ್ಟಗಳಿಂದ ಹೊರಬರಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಇದು ಶತ್ರುಗಳನ್ನು
@@ -1895,7 +1893,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra aghora mantra ">ಶ್ರೀ ವೀರಭದ್ರ ಅಘೋರ ಮಂತ್ರ \n\n
+    <string name="Sri_veerabhadra_aghora_mantra">ಶ್ರೀ ವೀರಭದ್ರ ಅಘೋರ ಮಂತ್ರ \n\n
 
 
         ಅಘೋರೇಭ್ಯೋ ಘೋರೇಭ್ಯೋಘೋರ ಘೋರತರೇಭ್ಯ:ಸರ್ವೇಭ್ಯ ಸರ್ವಸರ್ವೇಭ್ಯೋನಮಸ್ತೆ ಅಸ್ತು ರುದ್ರರೂಪೊಭ್ಯಃ
@@ -1906,8 +1904,7 @@
         ಅಷ್ಟಾಕ್ಷರ ಮಂತ್ರ" ಓಂ ಹುಂ ಅಘೋರೇಭ್ಯೋ ನಮಃ"
     </string>
 
-
-    <string name=" sharabhopanisatthu ">ಶರಭೋಪನಿಷತ್\n\n
+    <string name="sharabhopanisatthu">ಶರಭೋಪನಿಷತ್\n\n
 
         ಸರ್ವಂ ಸಂತ್ಯಜ್ಯ ಮುನಯೋ ಯದ್ಭಜಂತ್ಯಾತ್ಮರೂಪತಃ |ತಚ್ಛಾರಭಂ ತ್ರಿಪಾದ್ಬ್ರಹ್ಮ ಸ್ವಮಾತ್ರಮವಶಿಷ್ಯತೇ ||
 
@@ -2021,7 +2018,7 @@
         || ಇತಿ ಶರಭೋಪನಿಷತ್ಸಮಾಪ್ತಾ ||
     </string>
 
-    <string name=" Sri sharabha hrudaya sthotra ">ಶ್ರೀಶರಭ ಹೃದಯ ಸ್ತೋತ್ರಂ\n\n
+    <string name="Sri_sharabha_hrudaya_sthotra">ಶ್ರೀಶರಭ ಹೃದಯ ಸ್ತೋತ್ರಂ\n\n
 
         ಪುರಾ ನಾರಾಯಣಃ ಶ್ರೀಮಾನ್ ಕ್ಷೀರಾಬ್ಧೌ ಮಂಥನೆಕೃತೆ ತಸ್ಯ ಪ್ರಾರಂಭ ಸಮಯೇ ಹೃದಯೇ ಶರಭಸ್ಯಚ lಪ್ರಾತಃ ಕಾಲೇ
         ಪಠೇನ್ನೀತ್ಯಂ ವಿಂಶದಾವರ್ತಿಕಂ ಮುಂದಾ lಏವಂ ಮಾಸತ್ರಯಂ ಕೃತ್ವಾ ಪ್ರರ್ದುರ್ಭವತಿ ಶಾಲುಬಃlತತಶ್ಚ ದಂಡಬದ್ಬೂಮಿಂ
@@ -2098,7 +2095,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra dyanasloka 1">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು\n\n
+    <string name="Sri_veerabhadra_dyanasloka1">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು\n\n
 
 
         ಶ್ವೇತಾಂಗಂ ಶೇಷ ಭೂಷಾಂಗಂ ಖಡ್ಗ ವೀಣಾಧರಂ ಶುಭಂದೃತಕೃಷ್ಣಮೃಗಂ ವೀರಂ ಶಾರ್ದೂಲಾಜಿಧವಸಂಅರ್ಧೋನ್ಮೀಲಿತ ನೇತ್ರಾಂ
@@ -2110,7 +2107,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra dyanasloka 2 ">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು\n\n
+    <string name="Sri_veerabhadra_dyanasloka2">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು\n\n
 
         ಷನ್ನೇತ್ರಾಂ ತ್ರಿಮುಖಂ ಭೀಮಂ ಕಾಲಮೇಘ ಸಮಪ್ರಭಾಂಉಧರಸಿಜ್ವಲನಾಂ ನೀಲಘಾತ್ರಂ ಷಟ್ಬಾಹು ಶೋಭಿತಂಪಾನಪಾತ್ರಾಸಿ
         ಶೂಲೇಕ್ಷು ಚಾಪ ಖಡ್ಗಧರಂ ಶುಭಂಭೂತಪ್ರೇತಾದಿ ದಮನಂ ದುಷ್ಟಾರತಿ ವಿನಾಶನಂಮೇರು ವಾಸಂ ಮಹೇಶಂ ತಂ ವೀರಭದ್ರಂ
@@ -2121,7 +2118,7 @@
         ಪರ್ವತದಲ್ಲಿ ವಾಸಿಸುತ್ತಾ ನಮ್ಮನ್ನು ಪೊರೆಯುತ್ತಿರುವ ಶ್ರೀ ವೀರಭದ್ರನಿಗೆ ನಮಸ್ಕರಿಸುತ್ತಿದ್ದೇನೆ.
     </string>
 
-    <string name=" Sri veerabhadra dyanasloka 3">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು\n\n
+    <string name="Sri_veerabhadra_dyanasloka3">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು\n\n
 
 
         ಚತುರ್ಭುಜಮ್ ತ್ರಿನೇತ್ರಂ ಚ ಜಟಾಮಕುಟ ಮಂಡಿತಂಸರ್ವಾಭರಣ ಸಂಯುಕ್ತಂ ಶ್ವೇತವರ್ಣಂ ವೃಷಧ್ವಜಂಶೂಲಂ ಚ ಅಭಯ ಹಸ್ತಂ
@@ -2133,7 +2130,7 @@
         ಆಲದಮರದ ಅಡಿಯಲ್ಲಿ ಕಮಲದ ಹೂವಿನ ಮೇಲೆ ಕುಳಿತಿರುವ ಬ್ರಾಹ್ಮೀ ರೂಪಿ ವೀರಭದ್ರನೆಂದು ಖ್ಯಾತಿಯಾಗಿದ್ದಾನೆ.
     </string>
 
-    <string name=" Sri veerabhadra dyanasloka 4">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು\n\n
+    <string name="Sri_veerabhadra_dyanasloka4">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು\n\n
 
         ಮರಗತ ಮಣಿನೀಲಂ ಕಿಂಕಿಣೀ ಜಲಮಾಲಾಂಪ್ರಕಟಿತ ಮುಖಮೀಶಂ ಭಾನು ಸೋಮ ಅಗ್ನಿ ನೇತ್ರಂಹರಿಹರಮಸಿಕೇದತ್ರಯ ಕ್ರಧಾಂದಕ್ರ
         ಹಸ್ತಾಂವಿಧುಧರಂ ಅಹಿ ಭೂಷಮ್ ವೀರಭದ್ರಂ ನಮಾಮಿ
@@ -2144,8 +2141,7 @@
         ನಮಸ್ಕಾರಗಳು.
     </string>
 
-
-    <string name=" Sri veerabhadra dyanam">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ \n\n
+    <string name="Sri_veerabhadra_dyanam">ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ \n\n
 
         ಓಂ ನಮೋ ಭಗವತೇ ರುದ್ರಾಯನಮಸ್ತೇ ವೀರಭದ್ರಾಯ ಪ್ರಸನ್ನಃ ಪರಮಾತ್ಮನೇದಕ್ಷಧ್ವರ ವಿನಾಶಾಯ ಪ್ರತ್ಯಕ್ಷ
         ಪರಮಾತ್ಮನೇಅಕ್ಷೀಣ ಶೌರ್ಯಮತ್ತಾಯ ಸಾಕ್ಷಾತ್ ರುದ್ರಾಯತೇ ನಮಃ
@@ -2155,7 +2151,7 @@
         ಮಮಪಾಹಿಮಾಂ ವೀರಭದ್ರ ರಕ್ಷಮಾಂ ವೀರಭದ್ರ ||
     </string>
 
-    <string name=" Sri aghora veerabhadra dyanam ">ಶ್ರೀ ಅಘೋರ ವೀರಭದ್ರ ಧ್ಯಾನಂ\n\n
+    <string name="Sri_aghora_veerabhadra_dyanam">ಶ್ರೀ ಅಘೋರ ವೀರಭದ್ರ ಧ್ಯಾನಂ\n\n
 
         ಏಕವಕ್ತ್ರಂ ಮಹಾರೌದ್ರಂ ನಾಗಕುಂಡಲಶೋಭೀತಂ |ಕಿರೀಟ‌ಹಾಲಕೇಯೂರ ಕಟಕಾದಿ ವಿಭೂಷಿತಂ ||
 
@@ -2182,7 +2178,7 @@
         (ಮಂತ್ರಶಾಸ್ತ್ರೇ ಮಾಯಾಶಿಲ್ಪೇ ಚ- ಶ್ರೀತತ್ವನಿಧಿಃ)
     </string>
 
-    <string name=" Sri bhadrakali bhavani dyana">ಶ್ರೀ ಭದ್ರಕಾಳಿ ಭವಾನಿ ಧ್ಯಾನ \n\n
+    <string name="Sri_bhadrakali_bhavani_dyana">ಶ್ರೀ ಭದ್ರಕಾಳಿ ಭವಾನಿ ಧ್ಯಾನ \n\n
 
         ರಾಗ ದ್ವೇಷಾದಿ ರಹಿತಾ ರಾಜ ರಾಜ ಸುಪೂಜಿತವೀರಭದ್ರೇಶ್ವರ ಸತೀ ವೀರಶೈವಾತ್ಮ ಗೋಚರಾ
 
@@ -2199,9 +2195,7 @@
         ಸ್ಕಂದ ಪುರಾಣ.
     </string>
 
-    ಶ್ರೀಭದ್ರಕಾಳೀ ಕವಚಂ
-
-
+    <string name="Sri_bhadrakali_kavachanm">ಶ್ರೀಭದ್ರಕಾಳೀ ಕವಚಂ\n\n
     ಓಂ ಶ್ರೀದೇವ್ಯುವಾಚ |
 
     ಓಂ ಭಗವನ್ಕರುಣಾಂಭೋಧೇ ಶಾಸ್ತ್ರಾಂಭೋ ನಿಧಿಪಾರಗಃ |ತ್ರೈಲೋಕ್ಯಸಾರಯೇತ್ತತ್ತ್ವಂ ಜಗದ್ರಕ್ಷಣಕಾರಕಃ || ೧ ||
@@ -2309,10 +2303,10 @@
 
     ಗುಹ್ಯಂ ಗೋಪ್ಯಂ ಪರಂ ಪುಣ್ಯಂ ಗೋಪನೀಯ ಸ್ವಯೋನಿವತ್ .
 
-    || ಇತಿ ಶ್ರೀಭೈರವೀತಂತ್ರೇ ಭದ್ರಕಾಲೀಕವಚಂ ಸಂಪೂರ್ಣಂ ||
+        || ಇತಿ ಶ್ರೀಭೈರವೀತಂತ್ರೇ ಭದ್ರಕಾಲೀಕವಚಂ ಸಂಪೂರ್ಣಂ ||</string>
 
 
-    <string name=" Sri bhdrakali astakam ">ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕಂ\n\n
+    <string name="Sri_bhdrakali_astakam">ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕಂ\n\n
 
         ಸುತ್ರಾಮಾರ್ಚಿತಜಾದಾಬ್ಜಾಂ ಸುಖಸೌಭಾಗ್ಯದಾಯಿನೀಂ |ವೀರಭದ್ರ ಸತೀಂ ಶಿವಾಂ ಭದ್ರಕಾಳೀಂ ನಮಾಮ್ಯಹಂ || 1 ||
 
@@ -2337,7 +2331,7 @@
     </string>
 
 
-    <string name=" Sri bhadrakali astotthara sathanamavali">ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ\n\n
+    <string name="Sri_bhadrakali_astotthara_sathanamavali">ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ\n\n
 
         ಓಂ ಅಖಿಲಾಗಮ ಸಂಸ್ತುತ್ಯಾಯೈ ನಮಃಓಂ ಅನಂತಾನಂದದಾಯಿನ್ಯೈ ನಮಃಓಂ ಆಖಂಡಲ ಸುಪೂಜ್ಯಾಂಘ್ರ್ಯೈ ನಮಃಓಂ ಆಪನ್ನಾರ್ತಿ
         ವಿದಾರಿಣ್ಯೈ ನಮಃಓಂ ಇಂದುಮಂಡಲ ಸಂಪೂಜ್ಯಾಯ್ಯೈ ನಮಃಓಂ ಇನಗರ್ವಾಪಹಾರಿಣ್ಯೈ ನಮಃಓಂ ಈಶ್ವರ್ಯೈ ನಮಃಓಂ ಪರಮಾಯೈ
@@ -2373,7 +2367,7 @@
         || ಇತಿ ಶ್ರೀ ಭದ್ರಕಾಳೀ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ ಸಂಪೂರ್ಣಂ ||
     </string>
 
-    <string name=" Sri bhadrakali stuthi ">ಶ್ರೀ ಭದ್ರಕಾಳಿ ಸ್ತುತಿ \n\n
+    <string name="Sri_bhadrakali_stuthi">ಶ್ರೀ ಭದ್ರಕಾಳಿ ಸ್ತುತಿ \n\n
 
         ರಾಗ ದ್ವೇಷಾದಿ ರಹಿತಾ ರಾಜ ರಾಜ ಸುಪೂಜಿತವೀರಭದ್ರೇಶ್ವರ ಸತೀ ವೀರಶೈವಾತ್ಮ ಗೋಚರಾ
 
@@ -2391,8 +2385,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra guggala information">ಶ್ರೀ ವೀರಭದ್ರ ಗುಗ್ಗುಳದ ಬಗ್ಗೆ ಮಾಹಿತಿ \n\n
-
+    <string name="Sri_veerabhadra_guggala_information">ಶ್ರೀ ವೀರಭದ್ರ ಗುಗ್ಗುಳದ ಬಗ್ಗೆ ಮಾಹಿತಿ \n\n
 
         ಸಾಂಪ್ರದಾಯಿಕವಾಗಿ ಶ್ರೀವೀರಭದ್ರ ದೇವರನ್ನು ಪೂಜಿಸುವವರು ಮನೆಯಲ್ಲಿ ವಿವಾಹ ಕಾರ್ಯದಲ್ಲಿ ಮೊದಲು ಗುಗ್ಗಳವನ್ನು
         ಮಾಡುತ್ತಾರೆ. ಮನೆತನದ ಏಳಿಗೆಯ ಸಲುವಾಗಿ ಮಕ್ಕಳ ಲಗ್ನದಲ್ಲಿ ಮೊದಲು ಗುಗ್ಗಳವನ್ನು ಮಾಡುವ ಪದ್ಧತಿ ಹಿಂದಿನ
@@ -2446,7 +2439,6 @@
 
         ಕೃಪೆ:- ಶ್ರೀ ಶಂಕ್ರಪ್ಪ ತೊಂಡಿಹಾಳು, ಬೆಟಗೇರಿ.
     </string>
-
 
     <string name="Sri_veerabhadra_vadapugalu1">ಶ್ರೀವೀರಭದ್ರೇಶ್ವರ ವಡಪು\n\n
 
@@ -2857,7 +2849,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra  mangalaruthi 1">ಜಯ ವೀರಭದ್ರ ಕರುಣಾ ಸಮುದ್ರಾ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi1">ಜಯ ವೀರಭದ್ರ ಕರುಣಾ ಸಮುದ್ರಾ\n\n
 
         ಜಯ ವೀರಭದ್ರ ಕರುಣಾ ಸಮುದ್ರಾಜಯಜಯತು ಮಂಗಲವು ಪರಶಿವನ ಪುತ್ರ ll ಪ ll
 
@@ -2873,7 +2865,7 @@
         ರಚನೆ: ಸಿ.ಎಂ. ವೀರಣ್ಣನವರು, ವಿಜಯಪುರ.
     </string>
 
-    <string name=" Sri veerabhadra  mangalaruthi 2">ಮಂಗಳಾರತಿ ಶುಭ ಮಂಗಳಾರತಿ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi2">ಮಂಗಳಾರತಿ ಶುಭ ಮಂಗಳಾರತಿ\n\n
 
         ಮಂಗಳಾರತಿ ಶುಭ ಮಂಗಳಾರತಿಶ್ರೀ ವೀರಭದ್ರನಿಗೆ ಮುತ್ತಿನಾರುತಿ || ಪ ||
 
@@ -2887,7 +2879,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra  mangalaruthi 3">ವೀರ ಮಂಗಳಂ ವೀರಭದ್ರ ಮಂಗಳಂ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi3">ವೀರ ಮಂಗಳಂ ವೀರಭದ್ರ ಮಂಗಳಂ\n\n
 
         ವೀರ ಮಂಗಲಂ ವೀರಭದ್ರ ಮಂಗಳಂಭದ್ರಕಾಳಿ ಪ್ರಿಯಪತಿ ವಿರೂಪಾಕ್ಷ ಮಂಗಳಂ
 
@@ -2903,7 +2895,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra  mangalaruthi 4">ಜಯ ಮಂಗಳಂ ನಿತ್ಯ ಶುಭ ಮಂಗಳಂ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi4">ಜಯ ಮಂಗಳಂ ನಿತ್ಯ ಶುಭ ಮಂಗಳಂ\n\n
 
         ಜಯ ಮಂಗಳಂ ನಿತ್ಯ ಶುಭ ಮಂಗಳಂ lಜಯ ಜಯತು ಶ್ರೀ ವಿಜಯ ವೀರೇಶಗೆ ll ಪ ll
 
@@ -2923,7 +2915,7 @@
         ಧರಿಸಿದವರಸಮಯವಾರ್ಧಿ ವಡಬಾನಲಂಗೆಜಯಮಂಗಳಂ ನಿತ್ಯ ಶುಭ ಮಂಗಳಂ ll ೫ ll
     </string>
 
-    <string name=" Sri veerabhadra  mangalaruthi 5">ರುದ್ರಗೆ ಕಲಿ ವೀರಭದ್ರಾಗೆ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi5">ರುದ್ರಗೆ ಕಲಿ ವೀರಭದ್ರಾಗೆ\n\n
 
         ರುದ್ರಗೆ ಕಲಿ ವೀರಭದ್ರಾಗೆ ……ಎತ್ತಾರುತಿಯ ಬೆಳಗಿರಿ ಸಾ ರುದ್ರದೇವಾಗೆಎತ್ತುಹಾರುತಿ ಬೆಳಗಿರಿ ಯುವ ಯುದ್ದದಲ್ಲಿ
         ಭದ್ರನಾಗಿಯುದ್ಧದೈತ್ಯರನೆಲ್ಲ ಕೊಂದು ಗುದ್ದಿ ಗುದ್ದಿ ಕೆಡಸಿದಾ..
@@ -2942,7 +2934,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra  mangalaruthi 6">ಮಂಗಳಾರತಿ ಎತ್ತಿಪಾಡುವೆ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi6">ಮಂಗಳಾರತಿ ಎತ್ತಿಪಾಡುವೆ\n\n
 
         ಮಂಗಳಾರತಿ ಎತ್ತಿಪಾಡುವೆಭಂಗವಿಲ್ಲದೆ ಶಿನಸುತಗೆರುದ್ರನಣುಗಗೆ ವೀರಪುರುಷಗೆಭದ್ರಮೂರ್ತಿಗೆ ವೀರಭದ್ರಗೆ || ಪ ||
 
@@ -2962,7 +2954,7 @@
     </string>
 
 
-    <string name=" Sri veerabhadra  mangalaruthi 7">ರಾಯಚೋಟಿ ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರಗೆ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi7">ರಾಯಚೋಟಿ ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರಗೆ\n\n
 
         ರಾಯಚೋಟಿ ಶ್ರೀ ವೀರಭದ್ರೇಶಗೆಕರ್ಪೂರದಾರುತಿ ಎತ್ತಿ ಕರುಣಾಸಾಗರಗೆ ll ಪ ll
 
@@ -2976,8 +2968,7 @@
         ನೀಡುವಗೆಶೃಂಗಾರದಿಂದಲಿ ಶ್ರೀ ವೀರಭದ್ರನಿಗೆ ll ೩ ll
     </string>
 
-
-    <string name=" Sri veerabhadra  mangalaruthi 8">ಕರ್ಪೂರಾರುತಿ ಬೆಳಗಿರಿ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi8">ಕರ್ಪೂರಾರುತಿ ಬೆಳಗಿರಿ\n\n
 
         ಕರ್ಪುರಾರತಿ ಬೆಳಗಿರಿಕರಿವೀರಗೆ ಗಂಭೀರಗೆ || ಪ ||
 
@@ -2990,7 +2981,7 @@
         ರಚನೆ: ಚೌಡಾಪುರ ಮಠದ ಬಸಯ್ಯಸ್ವಾಮಿಯವರು
     </string>
 
-    <string name=" Sri veerabhadra mangalaarati 8 ">ಜಯವೆಂದು ಬೆಳಗುವೆ ವೀರಭದ್ರನಿಗೆ\n\nಜಯವೆಂದು ಬೆಳಗುವೆ
+    <string name="Sri_veerabhadra_mangalaruthi9">ಜಯವೆಂದು ಬೆಳಗುವೆ ವೀರಭದ್ರನಿಗೆ\n\nಜಯವೆಂದು ಬೆಳಗುವೆ
         ವೀರಭದ್ರನಿಗೆವೀರಭದ್ರನಿಗೆ ಭದ್ರನಾಥನಿಗೆ || ಪ ||
 
         ಪರಶಿವನ ಸ್ಟೇದದಿ ಉದ್ಭವಿಸಿದವನಿಗೆಪರಮೇಶ್ವರನ ಆಜ್ಞೆಯನ್ನು ಪಾಲಿಸದವನಿಗೆ || ೧ ||
@@ -3002,7 +2993,7 @@
         ಚಂಡಶಾಸನನಾಗಿ ಮಂಡಿಸಿದವನಿಗೆಉಂಡಬಂಡ ವೀರಭದ್ರನಾಥನಿಗೆ || ೪ ||
     </string>
 
-    <string name=" Sri veerabhadra mangalaarati 9 ">ಶ್ರೀವೀರಭದ್ರ ಮಂಗಳಂ ದೇವಭದ್ರ ಮಂಗಳಂ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi10">ಶ್ರೀವೀರಭದ್ರ ಮಂಗಳಂ ದೇವಭದ್ರ ಮಂಗಳಂ\n\n
 
         ವೀರಭದ್ರ ಮಂಗಳಂ ದೇವಭದ್ರ ಮಂಗಳಂಹಿತಪವಿತ್ರ ಗತಚರಿತ್ರ ಪತೀತನಾಥ ಮಂಗಳಂ llಪll
 
@@ -3016,7 +3007,7 @@
         ಶ್ರೀಶರಭಗೆ ಮಂಗಳಂ ಕಲಿವೀರಗೆ ಮಂಗಳಂಮಾರುತಿಗೆ ಲಿಂಗ ಕೊಟ್ಟ ಭದ್ರೇಶಗೆ ಮಂಗಳಂಭದ್ರೇಶಗೆ ಮಂಗಳಂ ll೪ll
     </string>
 
-    <string name=" Sri veerabhadra mangalaarati 10 ">ಜಯ ಮಂಗಳಂ ಜಯ ಮಂಗಳಂ\n\n
+    <string name="Sri_veerabhadra_mangalaruthi11">ಜಯ ಮಂಗಳಂ ಜಯ ಮಂಗಳಂ\n\n
 
         ಜಯ ಮಂಗಳಂ ಜಯ ಮಂಗಳಂಜಯ ಜಯ ಶುಭ ಮಂಗಳಂ |ಭದ್ರಕಾಳಿಕಾ ಪ್ರಾಣ ನಾಯಕಾರಾಚೋಟಿ ವಾಸಾಯ ಮಂಗಳಂ ||
 
@@ -3032,8 +3023,7 @@
         ರಚನೆ : ಮಠಪತಿ ಶಂಕ್ರಯ್ಯಸ್ವಾಮಿಗಳು,ರಾಚೋಟಿ ದೇವಸ್ಥಾನ ಮುಖ್ಯ ಅರ್ಚಕರು.
     </string>
 
-
-    <string name=" Sri veerabhadra  puswanjali">ಶ್ರೀ ವೀರಭದ್ರ ಪುಷ್ವಾಂಜಲಿ\n\n
+    <string name="Sri_veerabhadra_puswanjali">ಶ್ರೀ ವೀರಭದ್ರ ಪುಷ್ವಾಂಜಲಿ\n\n
 
         ಹರಃ ಓಂ ಯಜ್ಞೇನ ಯಜ್ಞಮಯ ಜಂತುದೇವಾ ।ಸ್ಥಾನಿ ಧರ್ಮಾಣಿ ಪ್ರಥಮಾನ್ಯ ಸದ್ಯಾನ್ನ |ತೇಹನಾಕಂ ಮಹಿಮಾನ ಸಚಂತ್ರ
         ಯತ್ರಪೂರ್ವೇ ಸಾಧ್ಯಃ ಸಂತು ದೇವಾ ||ವಿರುಪಾಕ್ಷಯಾ ವಿದ್ಮಹೇ । ವೀರೇಶಾಯ ಧೀಮಯೇ |ತನ್ನೋ ವೀರಭದ್ರ ಪ್ರಚೋದಯಾತ್
@@ -3041,4 +3031,59 @@
 
         || ಭದ್ರಂ ಶುಭಂ ಮಂಗಲಂ ||
     </string>
+
+    <string name="app_name">ಶ್ರೀ ವೀರಭದ್ರಸ್ವಾಮಿ ಸ್ತೋತ್ರಮಾಲಾ</string>
+    <string name="about_head">ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ಪ್ರಚಾರ ಸಮಿತಿ, ಕರ್ನಾಟಕ</string>
+    <string name="contact_head">ಸಂಪರ್ಕಿಸಿ :</string>
+    <string name="action_settings">ಅಪ್ಲಿಕೇಶನ್ ಬಗ್ಗೆ</string>
+    <string name="app_setting">ಅಪ್ಲಿಕೇಶನ್ ಸೆಟ್ಟಿಂಗ್</string>
+    <string name="shareApp">ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <!--    <string name="rateUs">ಅಪ್ಲಿಕೇಶನ್ ರೇಟ್ ಮಾಡಿ</string>-->
+    <string name="themeMenu">ಥೀಮ್</string>
+    <string name="app_version">ಅಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿ : 1.2.0</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">ಮುಂದಿನ</string>
+    <string name="previous">ಹಿಂದಿನ</string>
+    <string name="app_id">ca-app-pub-2719647944299073~7912683496</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-2719647944299073/9964131764</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="download">ಡೌನ್ಲೋಡ್</string>
+    <string name="set_wallpaper">ವಾಲ್ಪೇಪರ್ ಆಯ್ಕೆ</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="do_mail">ಇಮೇಲ್ ಮಾಡಿ</string>
+    <string name="text_size_tittle">ಅಪ್ಲಿಕೇಶನ್ ಪಠ್ಯ ಗಾತ್ರ ಆಯ್ಕೆ</string>
+    <string name="text_size_summary">ಪಠ್ಯದ ಗಾತ್ರವನ್ನು ಹೆಚ್ಚಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+
+    <string name="choose_text_size">ಪಠ್ಯ ಗಾತ್ರ</string>
+    <string name="key_list_preference">prefs_key_text_size</string>
+    <string name="title_list_preference">tittle_key_text_size</string>
+    <string name="choose_text_size_desc">ಅಪ್ಲಿಕೇಶನ್‌ಗಾಗಿ ಪಠ್ಯ ಗಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="app_text_bold">prefs_app_text_bold</string>
+    <string name="make_text_bold">ಅಪ್ಲಿಕೇಶನ್ ಅಕ್ಷರಗಳನ್ನು ದಪ್ಪವಾಗಿಸಿ</string>
+    <string name="color_button">keybuttoncolor</string>
+    <string name="select_theme_summary">ಹಿನ್ನೆಲೆ ಬಣ್ಣವನ್ನು ಆರಿಸಿ</string>
+    <string name="select_theme_title">ಥೀಮ್ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="prefs_color_theme">prefs_color_theme</string>
+
+    <string-array name="settings_list_preference_titles">
+        <item>15 ಗಾತ್ರ</item>
+        <item>18 ಗಾತ್ರ</item>
+        <item>24 ಗಾತ್ರ</item>
+        <item>28 ಗಾತ್ರ</item>
+        <item>30 ಗಾತ್ರ</item>
+        <item>32 ಗಾತ್ರ</item>
+        <item>35 ಗಾತ್ರ</item>
+    </string-array>
+    <string-array name="settings_list_preference_values">
+        <item>15</item>
+        <item>18</item>
+        <item>24</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>35</item>
+    </string-array>
 </resources>
