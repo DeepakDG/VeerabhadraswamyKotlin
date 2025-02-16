@@ -16,7 +16,7 @@ class ViewPagerDashboard : AppCompatActivity() {
     private var textLongList = listOf<String>()
     private lateinit var heading: String
     private var tinyDB: TinyDB? = null
-    private lateinit var activity_main:ConstraintLayout
+    private lateinit var activity_main: ConstraintLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.contentdetails)
@@ -64,9 +64,12 @@ class ViewPagerDashboard : AppCompatActivity() {
                 getString(R.string.veerabhadrastaka)
             )
         } else if (pos == 7) {
-            heading = "ಶಶ್ರೀ ವೀರಭದ್ರ ಶತಕ"
+            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಶತಕ"
             imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_shathaka)
+                getString(R.string.Sri_veerabhadra_shathaka1) +
+                        getString(R.string.Sri_veerabhadra_shathaka2) + getString(R.string.Sri_veerabhadra_shathaka3) + getString(
+                    R.string.Sri_veerabhadra_shathaka4
+                ) + getString(R.string.Sri_veerabhadra_shathaka5) + getString(R.string.Sri_veerabhadra_shathaka6)
             )
         } else if (pos == 8) {
             heading = "ಶ್ರೀವೀರಭದ್ರ ಶರಣಾಗತಿ ಸ್ತೋತ್ರಂ"
@@ -79,6 +82,131 @@ class ViewPagerDashboard : AppCompatActivity() {
                 getString(R.string.Sri_veerabhadra_bhujanga_sthotra)
             )
         } else if (pos == 10) {
+            heading = "ಆತ್ಮಾವೀರೇಶ್ವರಸ್ತೋತ್ರಂ"
+            imagesList = listOf(
+                getString(R.string.athma_veereswars_stotram)
+            )
+        } else if (pos == 11) {
+            heading = "ಶ್ರೀವೀರಭದ್ರಸ್ವಾಮಿ ಸ್ತೋತ್ರ"
+            imagesList = listOf(
+                getString(R.string.Sri_Veerabhadra_sthotra)
+            )
+        } else if (pos == 12) {
+            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಅಷ್ಟೋತ್ತರ\n" +
+                    "ಶತನಾಮಾವಳಿ ಸ್ತೋತ್ರ"
+            imagesList = listOf(
+                getString(R.string.Sri_Veerabhadra_ashtottara_shata_namavali_sthotra)
+            )
+        } else if (pos == 13) {
+            heading = "ಶ್ರೀವೀರಭದ್ರ ಸಹಸ್ರನಾಮ ಸ್ತೋತ್ರಮ್"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadra_sahasranama_sthotra1) +
+                        getString(R.string.Sri_veerabhadra_sahasranama_sthotra2) +
+                        getString(R.string.Sri_veerabhadra_sahasranama_sthotra3) +
+                        getString(R.string.Sri_veerabhadra_sahasranama_sthotra4) +
+                        getString(R.string.Sri_veerabhadra_sahasranama_sthotra5) +
+                        getString(R.string.Sri_veerabhadra_sahasranama_sthotra6) +
+                        getString(R.string.Sri_veerabhadra_sahasranama_sthotra7) +
+                        getString(R.string.Sri_veerabhadra_sahasranama_sthotra8)
+            )
+        } else if (pos == 14) {
+            heading = "ಶ್ರೀವೀರಭದ್ರ ನಕ್ಷತ್ರ ನಾಮಾವಲಿಃ"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadra_nakshatra_namavali)
+            )
+        } else if (pos == 15) {
+            heading = "ವೀರಭದ್ರಾಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadraastottara_shata_namavali)
+            )
+        } else if (pos == 16) {
+            heading = "ಶ್ರೀವೀರಭದ್ರ ಸಹಸ್ರ ನಾಮಾವಲಿಃ"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadra_sahasranamavali1) +
+                        getString(R.string.Sri_veerabhadra_sahasranamavali2) +
+                        getString(R.string.Sri_veerabhadra_sahasranamavali3) +
+                        getString(R.string.Sri_veerabhadra_sahasranamavali4) +
+                        getString(R.string.Sri_veerabhadra_sahasranamavali5) +
+                        getString(R.string.Sri_veerabhadra_sahasranamavali6) +
+                        getString(R.string.Sri_veerabhadra_sahasranamavali7) +
+                        getString(R.string.Sri_veerabhadra_sahasranamavali8) +
+                        getString(R.string.Sri_veerabhadra_sahasranamavali9) +
+                        getString(R.string.Sri_veerabhadra_sahasranamavali10)
+            )
+        } else if (pos == 17) {
+            heading = "ಶ್ರೀವೀರಭದ್ರ ಮಾಲಾ ಮಹಾಮಂತ್ರಃ"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadra_malamaha_manthra)
+            )
+        } else if (pos == 18) {
+            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಮೂಲಮಂತ್ರ"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadra_moola_mantra)
+            )
+        } else if (pos == 19) {
+            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಅಘೋರ ಮಂತ್ರ"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadra_aghora_mantra)
+            )
+        } else if (pos == 20) {
+            heading = "ಶರಭೋಪನಿಷತ್"
+            imagesList = listOf(
+                getString(R.string.sharabhopanisatthu)
+            )
+        } else if (pos == 21) {
+            heading = "ಶ್ರೀಶರಭ ಹೃದಯ ಸ್ತೋತ್ರಂ"
+            imagesList = listOf(
+                getString(R.string.Sri_sharabha_hrudaya_sthotra)
+            )
+        } else if (pos == 22) {
+            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadra_dyanasloka1),
+                getString(R.string.Sri_veerabhadra_dyanasloka2),
+                getString(R.string.Sri_veerabhadra_dyanasloka3),
+                getString(R.string.Sri_veerabhadra_dyanasloka4)
+            )
+        } else if (pos == 23) {
+            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadra_dyanam)
+            )
+        } else if (pos == 24) {
+            heading = "ಶ್ರೀ ಅಘೋರ ವೀರಭದ್ರ ಧ್ಯಾನಂ"
+            imagesList = listOf(
+                getString(R.string.Sri_aghora_veerabhadra_dyanam)
+            )
+        } else if (pos == 25) {
+            heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಭವಾನಿ ಧ್ಯಾನ"
+            imagesList = listOf(
+                getString(R.string.Sri_bhadrakali_bhavani_dyana)
+            )
+        } else if (pos == 26) {
+            heading = "ಶ್ರೀಭದ್ರಕಾಳೀ ಕವಚಂ"
+            imagesList = listOf(
+                getString(R.string.Sri_bhadrakali_kavachanm)
+            )
+        } else if (pos == 27) {
+            heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕಂ"
+            imagesList = listOf(
+                getString(R.string.Sri_bhdrakali_astakam)
+            )
+        } else if (pos == 28) {
+            heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ"
+            imagesList = listOf(
+                getString(R.string.Sri_bhadrakali_astotthara_sathanamavali)
+            )
+        } else if (pos == 29) {
+            heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಸ್ತುತಿ"
+            imagesList = listOf(
+                getString(R.string.Sri_bhadrakali_stuthi)
+            )
+        } else if (pos == 30) {
+            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಗುಗ್ಗುಳದ ಬಗ್ಗೆ ಮಾಹಿತಿ"
+            imagesList = listOf(
+                getString(R.string.Sri_veerabhadra_guggala_information)
+            )
+        } else if (pos == 31) {
             heading = "ಶ್ರೀ ವೀರಭದ್ರೇಶ್ವರ ವಡಪುಗಳು"
             imagesList = listOf(
                 getString(R.string.Sri_veerabhadra_vadapugalu1),
@@ -115,116 +243,7 @@ class ViewPagerDashboard : AppCompatActivity() {
                 getString(R.string.Sri_veerabhadra_vadapugalu32),
                 getString(R.string.Sri_veerabhadra_vadapugalu33)
             )
-        } else if (pos == 11) {
-            heading = "ಆತ್ಮಾವೀರೇಶ್ವರಸ್ತೋತ್ರಂ"
-            imagesList = listOf(
-                getString(R.string.athma_veereswars_stotram)
-            )
-        } else if (pos == 12) {
-            heading = "ಶ್ರೀವೀರಭದ್ರಸ್ವಾಮಿ ಸ್ತೋತ್ರ"
-            imagesList = listOf(
-                getString(R.string.Sri_Veerabhadra_sthotra)
-            )
-        } else if (pos == 13) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಅಷ್ಟೋತ್ತರ\n" +
-                    "ಶತನಾಮಾವಳಿ ಸ್ತೋತ್ರ"
-            imagesList = listOf(
-                getString(R.string.Sri_Veerabhadra_ashtottara_shata_namavali_sthotra)
-            )
-        } else if (pos == 14) {
-            heading = "ಶ್ರೀವೀರಭದ್ರ ಸಹಸ್ರನಾಮ ಸ್ತೋತ್ರಮ್"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_sahasranama_sthotra)
-            )
-        } else if (pos == 15) {
-            heading = "ಶ್ರೀವೀರಭದ್ರ ನಕ್ಷತ್ರ ನಾಮಾವಲಿಃ"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_nakshatra_namavali)
-            )
-        } else if (pos == 16) {
-            heading = "ವೀರಭದ್ರಾಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadraastottara_shata_namavali)
-            )
-        } else if (pos == 17) {
-            heading = "ಶ್ರೀವೀರಭದ್ರ ಸಹಸ್ರ ನಾಮಾವಲಿಃ"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_sahasranamavali)
-            )
-        } else if (pos == 18) {
-            heading = "ಶ್ರೀವೀರಭದ್ರ ಮಾಲಾ ಮಹಾಮಂತ್ರಃ"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_malamaha_manthra)
-            )
-        } else if (pos == 19) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಮೂಲಮಂತ್ರ"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_moola_mantra)
-            )
-        } else if (pos == 20) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಅಘೋರ ಮಂತ್ರ"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_aghora_mantra)
-            )
-        }else if (pos == 21) {
-            heading = "ಶರಭೋಪನಿಷತ್"
-            imagesList = listOf(
-                getString(R.string.sharabhopanisatthu)
-            )
-        }else if (pos == 22) {
-            heading = "ಶ್ರೀಶರಭ ಹೃದಯ ಸ್ತೋತ್ರಂ"
-            imagesList = listOf(
-                getString(R.string.Sri_sharabha_hrudaya_sthotra)
-            )
-        }else if (pos == 23) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನ ಶ್ಲೋಕಗಳು"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_dyanasloka1),
-                getString(R.string.Sri_veerabhadra_dyanasloka2),
-                getString(R.string.Sri_veerabhadra_dyanasloka3),
-                getString(R.string.Sri_veerabhadra_dyanasloka4)
-            )
-        }else if (pos == 24) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಧ್ಯಾನಂ"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_dyanam)
-            )
-        }else if (pos == 25) {
-            heading = "ಶ್ರೀ ಅಘೋರ ವೀರಭದ್ರ ಧ್ಯಾನಂ"
-            imagesList = listOf(
-                getString(R.string.Sri_aghora_veerabhadra_dyanam)
-            )
-        }else if (pos == 26) {
-            heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಭವಾನಿ ಧ್ಯಾನ"
-            imagesList = listOf(
-                getString(R.string.Sri_bhadrakali_bhavani_dyana)
-            )
-        }else if (pos == 27) {
-            heading = "ಶ್ರೀಭದ್ರಕಾಳೀ ಕವಚಂ"
-            imagesList = listOf(
-                getString(R.string.Sri_bhadrakali_kavachanm)
-            )
-        }else if (pos == 28) {
-            heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟಕಂ"
-            imagesList = listOf(
-                getString(R.string.Sri_bhdrakali_astakam)
-            )
-        }else if (pos == 29) {
-            heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಅಷ್ಟೋತ್ತರ ಶತನಾಮಾವಳಿ"
-            imagesList = listOf(
-                getString(R.string.Sri_bhadrakali_astotthara_sathanamavali)
-            )
-        }else if (pos == 30) {
-            heading = "ಶ್ರೀ ಭದ್ರಕಾಳಿ ಸ್ತುತಿ"
-            imagesList = listOf(
-                getString(R.string.Sri_bhadrakali_stuthi)
-            )
-        }else if (pos == 31) {
-            heading = "ಶ್ರೀ ವೀರಭದ್ರ ಗುಗ್ಗುಳದ ಬಗ್ಗೆ ಮಾಹಿತಿ"
-            imagesList = listOf(
-                getString(R.string.Sri_veerabhadra_guggala_information)
-            )
-        }else if (pos == 32) {
+        } else if (pos == 32) {
             heading = "ಜಯ ವೀರಭದ್ರ ಕರುಣಾ ಸಮುದ್ರಾ"
             imagesList = listOf(
                 getString(R.string.Sri_veerabhadra_mangalaruthi1),
@@ -239,7 +258,7 @@ class ViewPagerDashboard : AppCompatActivity() {
                 getString(R.string.Sri_veerabhadra_mangalaruthi10),
                 getString(R.string.Sri_veerabhadra_mangalaruthi11)
             )
-        }else {
+        } else {
             heading = "ಶ್ರೀ ವೀರಭದ್ರ ಪುಷ್ವಾಂಜಲಿ"
             imagesList = listOf(
                 getString(R.string.Sri_veerabhadra_puswanjali)

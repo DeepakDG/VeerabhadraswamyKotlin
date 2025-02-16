@@ -97,9 +97,12 @@ class MainActivity : AppCompatActivity() {
 
         "ಶ್ರೀವೀರಭದ್ರೇಶ್ವರ ವಡಪು" to 33,
 
-        "Veerabhadra Mangalarathi" to 34,
+        "ಜಯ ವೀರಭದ್ರ ಕರುಣಾ ಸಮುದ್ರಾ" to 34,
 
-        "ಶ್ರೀ ವೀರಭದ್ರ ಪುಷ್ವಾಂಜಲಿ" to 35
+        "ಶ್ರೀ ವೀರಭದ್ರ ಪುಷ್ವಾಂಜಲಿ" to 35,
+
+        //dummy added as the last item was not displaying
+        "ಶ್ರೀ ವೀರಭದ್ರ" to 36
     )
     private val IMAGE_URL = "gs://veerabhadraswamymantra.appspot.com/"
     private lateinit var auth: FirebaseAuth
@@ -143,10 +146,10 @@ class MainActivity : AppCompatActivity() {
 
         // ArrayList of class ItemsViewModel
         val data = ArrayList<ItemsViewModel>()
-
-        for (i in dashboardList.keys) {
-            data.add(ItemsViewModel(R.drawable.om, i))
-        }
+        dashboardList.forEach{keys ->data.add(ItemsViewModel(R.drawable.om, keys.key))}
+//        for (i in dashboardList.keys) {
+//            data.add(ItemsViewModel(R.drawable.om, i)
+//        }
 
         // This will pass the ArrayList to our Adapter
         val adapter = ListViewCustomAdapter(data)
